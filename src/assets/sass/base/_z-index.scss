@@ -1,0 +1,16 @@
+/* ======================  z-index Start  ======================*/
+// Positive z-index
+@for $i from 1 through 9 {
+    .z--#{$i} {
+        z-index: $i;
+    }
+}
+
+// Negative z-index
+@for $i from 1 through 9 {
+    .zm--#{$i} {
+        z-index: -$i;
+    }
+}
+
+/* ======================  z-index End  ======================*/

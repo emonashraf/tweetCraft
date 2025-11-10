@@ -1,0 +1,63 @@
+/* ====================== Breadcrumb Css Start ==================== */
+.breadcrumb {
+  margin-bottom: 0;
+  padding-top: clamp(5rem, 3.906rem + 5.469vw, 9.375rem);
+  padding-bottom: clamp(1.875rem, 0.781rem + 5.469vw, 6.25rem);
+  position: relative;
+  z-index: 1;
+  background-color: hsl(var(--white)/ 0.05);
+
+
+  &__pattern {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image:
+      linear-gradient(to right, hsl(var(--white)/ 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--white)/ 0.1) 1px, transparent 1px);
+    background-size: clamp(2.188rem, 1.641rem + 2.734vw, 4.375rem) clamp(2.188rem, 1.641rem + 2.734vw, 4.375rem);
+    mask-image: radial-gradient(ellipse 40% 80% at 50% 0%, hsl(var(--black)) 60%, transparent 100%);
+  }
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+
+    &-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+
+    &-text {
+      color: hsl(var(--base));
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+
+    &:hover {
+      color: hsl(var(--base));
+    }
+  }
+}
+
+/* ====================== Breadcrumb Css End ==================== */

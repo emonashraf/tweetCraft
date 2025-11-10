@@ -1,0 +1,130 @@
+<!-- meta tags and other links -->
+@@include('../partials/_template-top.html')
+
+<!--==========================  Dashboard Section Start  ==========================-->
+<div class="dashboard">
+  @@include('../partials/_user-sidebar.html')
+  <div class="dashboard__wrap">
+    @@include('../partials/_user-header.html')
+    <div class="dashboard__wrapper">
+      <div class="row gy-4 ">
+        <div class="col-12">
+          <div class="create-form">
+            <div class="row gy-4">
+              <div class="col-xl-3">
+                <div class="create-form__sidebar">
+                  <h4 class="create-form__title">Components</h4>
+                  <form class="create-form__forms">
+                    <div class="create-form__item-wrap">
+                      <div class="create-form__items active">
+                        <i class="fa-solid fa-text-width"></i>
+                        <p>Heading</p>
+                      </div>
+                      <div class="create-form__items">
+                        <i class="fa-brands fa-codepen"></i>
+                        <p>Logo</p>
+                      </div>
+                      <div class="create-form__items">
+                        <i class="fa-solid fa-keyboard"></i>
+                        <p>Text Box</p>
+                      </div>
+                      <div class="create-form__items">
+                        <i class="fa-solid fa-align-left"></i>
+                        <p>Line Text</p>
+                      </div>
+                      <div class="create-form__items">
+                        <i class="fa-solid fa-list"></i>
+                        <p>List</p>
+                      </div>
+                      <div class="create-form__items">
+                        <i class="fa-regular fa-square-check"></i>
+                        <p>Checkbox</p>
+                      </div>
+                      <div class="create-form__items">
+                        <i class="fa-regular fa-calendar"></i>
+                        <p>Date & Time</p>
+                      </div>
+                      <div class="create-form__items">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <p>Date & Time</p>
+                      </div>
+                    </div>
+                    <div class="create-form__btn">
+                      <button class="btn--unstyle">See More</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-xl-9">
+                <div class="create-form__dropzone-wrap">
+                  <div class="row gy-3">
+                    <div class="col-lg-6">
+                      <div class="create-form__dropzone">
+                        <div class="create-form__dropzone-input">
+                          <input type="text" value="Form Title" class="form-control">
+                        </div>
+                        <div class="text-end">
+                          <div class="create-form__action">
+                            <button class="create-form__action-btn"><i
+                                class="fa-solid fa-up-down-left-right"></i>Move</button>
+                            <button class="create-form__action-btn"><i class="fa-solid fa-copy"></i> Copy</button>
+                            <button class="create-form__action-btn" type="button" data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+                                class="fa-solid fa-pen-to-square text--base"></i>Edit</button>
+                            <button class="create-form__action-btn"><i class="fa-solid fa-trash-can text--danger"></i>
+                              Remove</button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="create-form__dropzone">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--==========================  Dashboard Section End  ==========================-->
+
+<div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+  aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h4 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Edit Text Box</h4>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <form class="">
+      <div class="row  gx-3 gy-4">
+        <div class="col-12">
+          <label class="form-label">Label</label>
+          <input type="text" class="form-control" placeholder="enter label">
+        </div>
+        <div class="col-12">
+          <label class="form-label">Enter placeholder</label>
+          <input type="text" class="form-control" placeholder="Enter placeholder">
+        </div>
+        <div class="col-12">
+          <label class="form-label">Enter placeholder</label>
+          <select class="form-control select2">
+            <option>Text</option>
+            <option>Email</option>
+            <option>Number</option>
+          </select>
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn--base  w-100">Save</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+@@include('../partials/_template-bottom.html')

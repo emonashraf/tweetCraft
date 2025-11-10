@@ -1,0 +1,228 @@
+/* ================================= Button Css Start =========================== */
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+  color: none;
+  background-color: none;
+  border-color: none;
+}
+
+.pill {
+  border-radius: 40px !important;
+}
+
+.btn {
+  color: hsl(var(--white)) !important;
+  font-size: var(--common-f-size);
+  font-weight: 700;
+  padding: var(--common-p);
+  border-radius: var(--common-radius);
+  position: relative;
+  z-index: 1;
+  border: 1px solid transparent;
+  font-family: var(--body-font);
+  line-height: 1.5;
+  display: flex !important;
+  gap: 10px;
+  justify-content: center;
+  transition: 0.3s;
+  align-items: center;
+  white-space: nowrap;
+
+
+  i {
+    &::before {
+      transition: 0.3s;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    box-shadow: none !important;
+  }
+
+  &:active {
+    top: 1px;
+  }
+
+  &--lg {
+    padding: 20px 35px;
+
+    @include md-screen {
+      padding: 18px 30px;
+    }
+
+    @include sm-screen {
+      padding: 16px 25px;
+    }
+  }
+
+  &--sm {
+    padding: var(--common-p-sm) !important;
+    font-weight: 400;
+  }
+
+  &--icon {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    padding: 0;
+  }
+
+  &--outline-light {
+    color: hsl(var(--heading-color)) !important;
+    border: 1px solid hsl(var(--black)/ 0.08);
+    transition: 0.3s;
+
+
+    &:hover {
+      background-color: hsl(var(--base-l-900));
+      border: 1px solid transparent;
+    }
+  }
+
+  &-bubble {
+    position: relative;
+
+    &:hover {
+      &::before {
+        top: -70%;
+        background-image: radial-gradient(circle, hsl(var(--base-d-200)) 20%, transparent 20%),
+          radial-gradient(circle, transparent 20%, hsl(var(--base-d-200)) 20%, transparent 30%),
+          radial-gradient(circle, hsl(var(--base-d-200)) 20%, transparent 20%),
+          radial-gradient(circle, hsl(var(--base-d-200)) 20%, transparent 20%),
+          radial-gradient(circle, transparent 10%, hsl(var(--base-d-200)) 15%, transparent 20%),
+          radial-gradient(circle, hsl(var(--base-d-200)) 20%, transparent 20%),
+          radial-gradient(circle, hsl(var(--base-d-200)) 20%, transparent 20%),
+          radial-gradient(circle, hsl(var(--base-d-200)) 20%, transparent 20%),
+          radial-gradient(circle, hsl(var(--base-d-200)) 20%, transparent 20%);
+        background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+          10% 10%, 18% 18%;
+        background-position: 50% 120%;
+        animation: greentopBubbles 0.6s ease;
+      }
+
+      &::after {
+        bottom: -70%;
+        background-image: radial-gradient(circle, hsl(var(--base-d-200)) 20%, transparent 20%),
+          radial-gradient(circle, hsl(var(--base-d-200)) 20%, transparent 20%),
+          radial-gradient(circle, transparent 10%, hsl(var(--base-d-200)) 15%, transparent 20%),
+          radial-gradient(circle, hsl(var(--base-d-200)) 20%, transparent 20%),
+          radial-gradient(circle, hsl(var(--base-d-200)) 20%, transparent 20%),
+          radial-gradient(circle, hsl(var(--base-d-200)) 20%, transparent 20%),
+          radial-gradient(circle, hsl(var(--base-d-200)) 20%, transparent 20%);
+        background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+        background-position: 50% 0%;
+        animation: greenbottomBubbles 0.6s ease;
+      }
+    }
+
+
+    @keyframes greentopBubbles {
+      0% {
+        background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+          40% 90%, 55% 90%, 70% 90%;
+      }
+
+      50% {
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+          50% 50%, 65% 20%, 90% 30%;
+      }
+
+      100% {
+        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+          50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+      }
+    }
+
+    @keyframes greenbottomBubbles {
+      0% {
+        background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+          70% -10%, 70% 0%;
+      }
+
+      50% {
+        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+          105% 0%;
+      }
+
+      100% {
+        background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+          110% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+      }
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 150%;
+      left: 50%;
+      height: 100%;
+      transform: translateX(-50%);
+      z-index: -1000;
+      background-repeat: no-repeat;
+    }
+  }
+
+
+
+  // ============= Gradient Button End =======================
+
+  // ============= Different Color Button Start ==================
+  @include btn-style(--base);
+  @include btn-style(--base-two);
+  @include btn-style(--primary);
+  @include btn-style(--secondary);
+  @include btn-style(--danger);
+  @include btn-style(--success);
+  @include btn-style(--warning);
+  @include btn-style(--info);
+}
+
+
+
+.btn--underline {
+  text-decoration: underline;
+  transition: 0.3s;
+
+  &:hover {
+    color: hsl(var(--base)) !important;
+
+  }
+
+}
+
+.btn--unstyle {
+  position: relative;
+  transition: 0.3s;
+  font-size: 15px;
+
+
+  &:hover {
+    color: hsl(var(--base));
+
+    &::before {
+      width: 100%;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0;
+    background-color: hsl(var(--base));
+    transition: 0.3s;
+  }
+}
+
+/* ================================= Button Css End =========================== */

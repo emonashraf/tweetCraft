@@ -1,0 +1,83 @@
+@@include('../partials/_template-top.html')
+<main>
+  <section class="account py-120">
+    <div class="common__pattern-2"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+            <div class="account__inner">
+                <div class="account__form-wrap">
+                  <a href="index.html" class="logo">
+                    <img src="assets/images/logo/logo.png" alt="img">
+                  </a>
+                  <form class="account__form">
+                    <div class="row  gx-3 gy-4">
+                      <div class="col-12">
+                        <div class="account__header">
+                          <h6 class="account__subtitle">Welcome back!</h6>
+                          <h2 class="account__title">Sign Up your account</h2>
+                          <p class="account__desc">It only takes a minute to start earning with surveys you’ll actually enjoy.</p>
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-md-6 col-sm-6">
+                        <input type="text" class="form-control" id="username" placeholder="Username" required>
+                      </div>
+                      <div class="col-xl-6 col-md-6 col-sm-6">
+                        <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                      </div>
+                      <div class="col-xl-6 col-md-6 col-sm-6">
+                        <select id="country" name="country" class=" select2" required>
+                          <option value="">Select Country</option>
+                          <option value="bd">Bangladesh</option>
+                          <option value="us">United State of America</option>
+                          <option value="uk">United Kingdom</option>
+                          <option value="in">India</option>
+                          <option value="aus">Australia</option>
+                        </select>
+                      </div>
+                      <div class="col-xl-6 col-md-6 col-sm-6">
+                        <div class="input-group">
+                          <span class="input-group-text">+880</span>
+                          <input type="tel" id="phoneNumber" class="form-control" placeholder="Phone">
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-md-6 col-sm-6">
+                        <div class="password__input">
+                          <input id="your-password" type="password" class="form-control" placeholder="Password" required>
+                          <span class="password-show-hide fas fa-eye toggle-password" id="#your-password"></span>
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-md-6 col-sm-6">
+                        <div class="password__input">
+                          <input id="confirm-password" type="password" class="form-control" placeholder="Confirm Password"
+                            required>
+                          <span class="password-show-hide fas fa-eye toggle-password" id="#confirm-password"></span>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="remember">
+                          <label class="form-check-label" for="remember">I agree with <a href="#" class="btn--underline">Privacy
+                              Policy</a>, <a href="#" class="btn--underline">Terms of
+                              Service</a></label>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <button type="submit" class="btn btn--base w-100">Sign Up</button>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="have-account text-center">
+                          <p class="have-account__text">Already Have An Account? <a href="login.html" class="btn--underline">Sign
+                              In</a> Here</p>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+@@include('../partials/_template-bottom.html')

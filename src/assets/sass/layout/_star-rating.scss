@@ -1,0 +1,20 @@
+/* ======================  Star Rating Section Start  ======================*/
+.star__rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+  list-style: none !important;
+
+  li {
+    font-size: 16px;
+    color: hsl(var(--body-color));
+    line-height: 1;
+
+    i {
+      color: hsl(var(--base));
+    }
+  }
+}
+
+/* ======================  Star Rating Section End  ======================*/

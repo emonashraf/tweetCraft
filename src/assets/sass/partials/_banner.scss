@@ -1,0 +1,85 @@
+/* ======================  Banner Start  ======================*/
+.banner {
+  position: relative;
+  z-index: 1;
+  padding-top: clamp(6.25rem, 5.156rem + 5.469vw, 10.625rem);
+  min-height: 100%;
+
+  &::before {
+    background-image: radial-gradient(125% 125% at 50% 90%, hsl(var(--white)) 35%, hsl(var(--base)/ 0.5) 100%);
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  &__content {
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-inline: auto;
+    align-items: center;
+
+  }
+
+  &__subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: hsl(var(--bae)/ 0.08);
+    color: hsl(var(--base));
+    border: 1px solid hsl(var(--base));
+    
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    margin-bottom: clamp(0.438rem, 0.313rem + 0.625vw, 0.938rem);
+    i{
+      font-size: 10px;
+    }
+  }
+
+  &__title {
+    margin-bottom: clamp(0.938rem, 0.703rem + 1.172vw, 1.875rem);
+
+    span {
+      background: linear-gradient(90deg, hsl(var(--base)), hsl(var(--base-l-700)));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__desc {
+    max-width: 760px;
+    margin-inline: auto;
+    font-size: clamp(1rem, 0.969rem + 0.156vw, 1.125rem);
+  }
+
+  &__btns {
+    display: flex;
+    gap: clamp(0.625rem, 0.469rem + 0.781vw, 1.25rem);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: clamp(0.625rem, 0.469rem + 0.781vw, 1.25rem);
+    margin-top: clamp(1.25rem, 1.094rem + 0.781vw, 1.875rem);
+    flex-wrap: wrap;
+  }
+
+  &__info-item {
+    position: relative;
+
+    i {
+      color: hsl(var(--base));
+      font-size: 14px;
+    }
+  }
+}

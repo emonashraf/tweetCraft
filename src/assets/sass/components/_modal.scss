@@ -1,0 +1,46 @@
+/* ================================= Modal Css Start =========================== */
+.modal {
+  &-header {
+    border-bottom: 1px solid hsl(var(--black) / 0.06);
+    padding: 15px;
+
+    .close {
+      width: 28px;
+      height: 28px;
+      background-color: hsl(var(--black) / 0.1);
+      font-size: 16px;
+      border-radius: 50%;
+      color: hsl(var(--black));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: .3s;
+
+      &:hover {
+        color: hsl(var(--white));
+      }
+    }
+  }
+
+  &-content {
+    border-radius: 10px !important;
+    background-color: hsl(var(--black));
+  }
+
+  &-body {
+    padding: 15px;
+  }
+
+  &-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-top: 1px solid hsl(var(--black) / 0.06);
+    justify-content: flex-end;
+  }
+}
+
+/* ================================= Modal Css End =========================== */

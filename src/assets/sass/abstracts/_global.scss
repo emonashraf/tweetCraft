@@ -1,0 +1,388 @@
+/* ======================  Section Heading Start  ======================*/
+.section-heading {
+  position: relative;
+  margin-bottom: clamp(2.5rem, 2.188rem + 1.563vw, 3.75rem);
+  z-index: 2;
+  max-width: rem(650px);
+  margin-inline: auto;
+  text-align: center;
+
+  &__name {
+   background-color: hsl(var(--white)/ 0.1);
+    width: fit-content;
+    padding: 6px 20px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    margin-bottom: clamp(0.313rem, 0.234rem + 0.391vw, 0.625rem);
+  }
+
+  &__desc {
+    margin-top: clamp(0.5rem, 0.406rem + 0.469vw, 0.875rem);
+  }
+
+  &__btn {
+    margin-top: clamp(1.875rem, 1.406rem + 2.344vw, 3.75rem);
+  }
+
+  &.style-left {
+    max-width: rem(400px);
+    margin-inline: unset;
+    text-align: start;
+    margin-bottom: clamp(1.563rem, 1.328rem + 1.172vw, 2.5rem);
+
+    .section-heading__name {
+      justify-content: start;
+    }
+  }
+
+  &.style-between {
+    max-width: 100%;
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+    gap: clamp(0.5rem, 0.406rem + 0.469vw, 0.875rem);
+
+    @include md-screen {
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      max-width: rem(550px);
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .section-heading__name {
+      justify-content: start;
+
+    }
+
+    .section-heading__title {
+      max-width: rem(500px);
+
+      @include md-screen {
+        margin-inline: auto;
+        text-align: center;
+      }
+
+    }
+
+    .section-heading__desc {
+      max-width: rem(350px);
+
+      @include md-screen {
+        margin-inline: auto;
+      }
+    }
+
+    .btn {
+      flex-shrink: 0;
+    }
+  }
+
+  &.style-white {
+    .section-heading__name {
+      color: hsl(var(--white) / 0.9);
+    }
+
+    .section-heading__title {
+      color: hsl(var(--white));
+    }
+
+    .section-heading__desc {
+      color: hsl(var(--white) / 0.8);
+    }
+  }
+}
+
+/* ======================  Section Heading End  ======================*/
+
+/* ======================  Overlay Section Start  ======================*/
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(var(--black) / 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: .4s;
+  z-index: 10;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* ======================  Overlay Section End  ======================*/
+
+/* ======================  avater Start  ======================*/
+.avater_list {
+  display: flex;
+
+  .avater {
+    width: 30px;
+    height: 30px;
+    background-color: hsl(var(--base));
+    border-radius: 50%;
+    border: 2px solid hsl(var(--white));
+
+    &:not(:first-child) {
+      margin-left: -8px;
+    }
+
+    @include md-screen {
+      width: rem(40px);
+      height: rem(40px);
+
+      &:not(:first-child) {
+        margin-left: -2px;
+      }
+    }
+
+
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      border-radius: inherit;
+
+    }
+
+    &:last-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .avater_number {
+      color: hsl(var(--base-two));
+    }
+  }
+}
+
+/* ======================  avater End  ======================*/
+
+/* ======================  Glove Start  ======================*/
+.glove--base {
+  width: clamp(18.75rem, 13.594rem + 25.781vw, 39.375rem);
+  height: clamp(18.75rem, 13.594rem + 25.781vw, 39.375rem);
+  border-radius: 50%;
+  filter: blur(260px);
+  background-color: hsl(var(--base)/ 0.42);
+  position: absolute;
+  z-index: -2;
+
+  &:nth-child(1) {
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+
+  &:nth-child(2) {
+    top: -50%;
+    left: -15%;
+  }
+
+  &:nth-child(3) {
+    bottom: -50%;
+    right: -15%;
+  }
+
+  &:nth-child(4) {
+    bottom: -45%;
+    width: 80%;
+  }
+
+  @include md-screen {
+    &:nth-child(1) {
+      top: -30%;
+      left: 40%;
+      transform: translateX(-50%);
+
+    }
+
+    &:nth-child(2) {
+      top: -40%;
+      left: -10%;
+    }
+
+    &:nth-child(3) {
+      top: -40%;
+      right: -10%;
+    }
+
+    &:nth-child(4) {
+      bottom: -35%;
+      right: 40%;
+      transform: translateX(50%);
+      width: 70%;
+    }
+  }
+
+  @include sm-screen {
+    &:nth-child(1) {
+      top: -10%;
+      left: 20%;
+      transform: translateX(-50%);
+
+    }
+
+    &:nth-child(2) {
+      top: -10%;
+      left: -5%;
+    }
+
+    &:nth-child(3) {
+      top: -10%;
+      right: -5%;
+    }
+
+    &:nth-child(4) {
+      bottom: -30%;
+      width: 60%;
+    }
+  }
+}
+
+/* ======================  patter-1 Start  ======================*/
+.common__pattern {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(to right, hsl(var(--white)/ 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, hsl(var(--white)/ 0.05) 1px, transparent 1px);
+  background-size: clamp(1.563rem, 1.016rem + 2.734vw, 3.75rem) clamp(1.563rem, 1.016rem + 2.734vw, 3.75rem);
+  mask-image: radial-gradient(ellipse 60% 70% at 50% 50%, hsl(var(--black)) 30%, transparent 70%);
+}
+.common__pattern-2{
+  position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image:
+      linear-gradient(to right, hsl(var(--white)/ 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--white)/ 0.1) 1px, transparent 1px);
+    background-size: clamp(2.188rem, 1.641rem + 2.734vw, 4.375rem) clamp(2.188rem, 1.641rem + 2.734vw, 4.375rem);
+    mask-image: radial-gradient(ellipse 40% 80% at 50% 0%, hsl(var(--black)) 60%, transparent 100%);
+}
+
+/* ======================  patter-1 End  ======================*/
+
+/* ======================  Common Shape Start  ======================*/
+.common__shape {
+  max-width: clamp(9.375rem, 3.531rem + 29.219vw, 32.75rem);
+  position: absolute;
+  top: 0;
+  z-index: -2;
+
+
+  &:nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+/* ======================  Common Shape End  ======================*/
+
+/*
+/* ======================  wyg Start  ======================*/
+.wyg h1,
+.wyg h2,
+.wyg h3,
+.wyg h4,
+.wyg h5 {
+  color: hsl(var(--heading-color));
+  margin-bottom: 12px;
+  margin-top: 20px;
+}
+
+.wyg p {
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  .wyg p {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+}
+
+.wyg h2 {
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 991px) {
+  .wyg h2 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wyg h2 {
+    margin-bottom: 14px;
+  }
+}
+
+.wyg ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 28px;
+  list-style: disc;
+  padding-left: 32px;
+}
+
+@media screen and (max-width: 991px) {
+  .wyg ul {
+    gap: 14px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wyg ul {
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+}
+
+.wyg ul li {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .wyg ul li {
+    font-size: 14px;
+  }
+}
+
+.wyg ol {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 48px;
+  list-style: decimal;
+  padding-left: 32px;
+}
+
+@media screen and (max-width: 991px) {
+  .wyg ol {
+    gap: 14px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wyg ol {
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+}
+
+/* ======================  wyg End  ======================*/

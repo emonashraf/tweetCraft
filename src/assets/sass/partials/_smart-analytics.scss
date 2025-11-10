@@ -1,0 +1,233 @@
+/* ======================  Smart-analytics Start  ======================*/
+.smart-analytics {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    --plus-size: 90px;
+
+    &__card {
+        position: relative;
+        padding: clamp(0.625rem, 0.469rem + 0.781vw, 1.25rem);
+        background-color: hsl(var(--white)/ 0.08);
+        border-radius: var(--b-radius-12);
+        z-index: 1;
+        overflow: hidden;
+        height: 100%;
+        backdrop-filter: blur(10px);
+
+        .rating-pattern {
+            position: absolute;
+            top: -30%;
+            right: -30%;
+            max-width: 180px;
+            animation: scal 2s ease-in-out infinite;
+        }
+
+        .mask-box {
+            width: 100%;
+            height: 100%;
+            background-color: hsl(var(--white));
+            z-index: -1;
+
+        }
+
+
+        .ai-power-shape {
+            width: 136px;
+            height: 136px;
+            fill: none;
+            z-index: 1;
+            position: relative;
+            fill: none;
+            animation: scal 2s ease-in-out infinite;
+
+
+            circle {
+                fill: none;
+                cx: 68;
+                cy: 68.5;
+                stroke-width: 2;
+
+                &:nth-child(1) {
+                    r: 67;
+                }
+
+                &:nth-child(2) {
+                    r: 48.5;
+                }
+
+                &:nth-child(3) {
+                    r: 31.5;
+                }
+
+                &:nth-child(4) {
+                    r: 23.5;
+                    fill: hsl(var(--base));
+                    filter: blur(8px);
+
+                }
+            }
+
+            linearGradient {
+                stop {
+
+                    &:nth-child(1) {
+                        stop-color: hsl(var(--base));
+                    }
+
+                    &:nth-child(2) {
+                        stop-color: hsl(var(--black)/ 0.3);
+                    }
+                }
+            }
+        }
+
+        .tradInfo-pattern {
+            position: absolute;
+            inset: 0;
+
+        }
+    }
+
+    .ai-power-card {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            background: hsl(var(--black)/ 0.2);
+            filter: blur(14px);
+            transform: translateY(-50%);
+            z-index: -1;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            background-image:
+                repeating-linear-gradient(transparent 0 30px, hsl(var(--white)/ 0.08) 30px 31px),
+                repeating-linear-gradient(-90deg, transparent 0 30px, hsl(var(--white)/ 0.08) 30px 31px);
+            z-index: -2;
+        }
+    }
+
+    &__graph {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: rem(45px);
+        z-index: 1;
+
+        .ai-power-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+        }
+
+        .ai-power-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: -1;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: var(--plus-size);
+                height: 1px;
+                background-color: hsl(var(--white));
+                z-index: -1;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: var(--plus-size);
+                width: 1px;
+                background-color: hsl(var(--white));
+                z-index: -1;
+            }
+        }
+
+    }
+
+    .profit-cart {
+        &__card {
+            border-radius: var(--b-radius-12);
+            background: linear-gradient(180deg, hsl(var(--base-two)/ 0.5), transparent);
+            padding-block: clamp(0.75rem, 0.547rem + 1.016vw, 1.563rem);
+            padding-inline: clamp(0.625rem, 0.469rem + 0.781vw, 1.25rem);
+        }
+
+        &__price {
+            margin-bottom: 6px;
+        }
+
+        &__title {
+            font-weight: 400;
+        }
+    }
+
+
+
+    &__title {
+        margin-bottom: clamp(0.938rem, 0.781rem + 0.781vw, 1.563rem);
+    }
+
+    &__rating {
+        font-size: clamp(1.563rem, 1.016rem + 2.734vw, 3.75rem);
+        margin-bottom: clamp(0.938rem, 0.781rem + 0.781vw, 1.563rem);
+    }
+
+    &__sub-title {
+        margin-top: rem(14px);
+        font-size: rem(18px);
+    }
+
+    // 
+    #tradInfo {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        min-height: 200px;
+        max-width: 400px;
+        margin-inline: auto;
+        left: 50% !important;
+    }
+
+    .trad-info-badge {
+        position: absolute;
+        padding: 15px;
+        max-height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        color: hsl(var(--white));
+        font-weight: 600;
+        border-radius: var(--b-radius-6);
+        white-space: no-wrap;
+    }
+}
+
+/* ======================  Smart-analytics End  ======================*/

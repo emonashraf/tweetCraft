@@ -1,0 +1,110 @@
+.dropdown {
+     position: relative;
+
+     &.dropdown-sm {
+          .dropdown-menu {
+               min-width: 170px;
+          }
+     }
+
+     .dropdown-btn {
+          min-width: 30px;
+          background-color: hsl(var(--white)/ 0.06);
+          border-radius: rem(8px);
+          border: 1px solid hsl(var(--black)/ 0.04);
+          padding: rem(8px) rem(20px);
+
+     }
+
+     .dropdown-toggle {
+          position: relative;
+          font-size: 16px;
+          font-weight: 500;
+          margin-right: 20px;
+          color: hsl(var(--body-color));
+          @include md-screen {
+               font-size: 15px;
+          }
+
+          &::after {
+               position: absolute;
+               top: 50%;
+               transform: translateY(-50%);
+               right: -20px;
+               content: "\f107";
+               font-family: "Font Awesome 6 Free";
+               font-weight: 900;
+               border: 0;
+               vertical-align: 0;
+               transition: 0.3s;
+
+          }
+
+          &[aria-expanded="true"] {
+               &::after {
+                    transform: translateY(-50%) rotate(180deg);
+               }
+          }
+     }
+
+
+     .dropdown-menu {
+          transform: scaleY(0);
+          transform-origin: top center;
+          top: 0;
+          left: 0;
+          transition: .3s;
+          overflow: hidden;
+          box-shadow: var(--box-shadow);
+          border-color: hsl(var(--white) / .06);
+          border-radius: 7px;
+          min-width: 200px;
+          margin-top: 0 !important;
+          background-color: hsl(var(--black));
+          padding-inline: 6px;
+
+          &-end {
+               left: auto;
+               right: 0;
+          }
+
+          li {
+               border-bottom: 1px solid hsl(var(--white) / .03);
+
+               &:last-child {
+                    border-bottom: 0;
+               }
+          }
+
+          .dropdown-item {
+               display: flex;
+               align-items: center;
+               gap: 4px;
+               padding: 8px 20px;
+               font-weight: 500;
+
+               color: hsl(var(--body-color));
+               border-radius: 5px;
+               transition: .3s;
+               
+
+
+               @include md-screen {
+                    font-size: rem(14px);
+                    padding: 5px 10px;
+               }
+
+               &.active {
+                    font-weight: 600;
+                    color: hsl(var(--base)) !important;
+               }
+
+               &:active,
+               &:focus,
+               &:hover {
+                    color: hsl(var(--white)) !important;
+                    background-color: hsl(var(--base));
+               }
+          }
+     }
+}

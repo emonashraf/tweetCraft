@@ -1,0 +1,32 @@
+/* ===================== Scroll to Top Start ================================= */
+.scroll-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: hsl(var(--white));
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(0);
+    background-color: hsl(var(--base));
+    border: 1px solid hsl(var(--base));
+    border-radius: var(--b-radius-6);
+    backdrop-filter: blur(10px);
+
+
+    &:hover {
+        color: hsl(var(--white));
+        background-color: hsl(var(--base));
+    }
+
+    &.show {
+        transform: scale(1);
+    }
+}
+
+/* ===================== Scroll to Top End ================================= */

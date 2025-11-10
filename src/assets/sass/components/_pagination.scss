@@ -1,0 +1,60 @@
+/* ================================= Pagination Css Start =========================== */
+.pagination {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 56px;
+
+  @include lg-screen {
+    margin-top: 48px;
+  }
+
+  @include md-screen {
+    margin-top: 40px;
+  }
+
+  @include sm-screen {
+    margin-top: 32px;
+  }
+
+  .page-item {
+    &.active {
+      .page-link {
+        background: hsl(var(--base));
+        color: hsl(var(--white));
+
+      }
+    }
+
+    &.disabled {
+      .page-link {
+        color: hsl(var(--heading-color) / 0.4);
+      }
+    }
+
+    .page-link {
+      border: 1px solid hsl(var(--white) / 0.1);
+      border-radius: 4px;
+      height: 40px;
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      font-weight: 500;
+      padding: 0;
+      color: hsl(var(--heading-color));
+
+      &:hover {
+        background: linear-gradient(180deg, hsl(var(--base)), transparent) !important;
+        color: hsl(var(--white));
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+/* ================================= Pagination Css End =========================== */

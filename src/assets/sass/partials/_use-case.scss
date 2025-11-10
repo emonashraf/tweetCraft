@@ -1,0 +1,143 @@
+.use-case {
+  position: relative;
+  overflow: hidden;
+  --item-gap: clamp(0.938rem, 0.703rem + 1.172vw, 1.875rem);
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--item-gap);
+
+    &-item {
+      display: flex;
+
+      &:not(:last-child) {
+        .use-case__list-title {
+          &::before {
+            bottom: calc(-1 * var(--item-gap));
+          }
+        }
+      }
+
+
+      &.active {
+        .use-case__list-icon {
+          color: hsl(var(--base));
+
+        }
+
+        .use-case__list-title {
+          color: hsl(var(--heading-color));
+
+          &::after {
+            min-height: 100%;
+            height: calc(100% - var(--item-gap));
+          }
+        }
+      }
+    }
+
+    &-icon {
+      width: clamp(1.875rem, 1.719rem + 0.781vw, 2.5rem);
+      height: clamp(1.875rem, 1.719rem + 0.781vw, 2.5rem);
+      font-size: clamp(1.25rem, 1.094rem + 0.781vw, 1.875rem);
+      flex-shrink: 0;
+      transition: 0.3s;
+      user-select: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-title {
+      position: relative;
+      padding-left: clamp(1rem, 0.75rem + 1.25vw, 2rem);
+      margin-left: clamp(1rem, 0.75rem + 1.25vw, 2rem);
+      transition: 0.3s;
+      color: hsl(var(--body-color));
+      margin-bottom: 0;
+      cursor: pointer;
+      user-select: non;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 2px;
+        background-color: hsl(var(--base));
+        height: 0;
+        transition: 0.3s;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        min-height: 100%;
+        width: 2px;
+        background-color: hsl(var(--black)/ 0.08);
+        transition: 0.3s;
+      }
+    }
+
+
+  }
+
+  &__banner {
+    aspect-ratio: 1/1;
+    position: relative;
+    background-color: hsl(var(--base-l-900));
+    border-radius: 12px;
+    z-index: 1;
+    transform: scale(0);
+    height: 0;
+    transition: 0.5s;
+
+    &.show {
+      height: 100%;
+      transform: scale(1);
+    }
+  }
+
+
+  &__thumb {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: rem(600px);
+    bac
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__offer-thumb {
+    max-width: clamp(6.875rem, 5.313rem + 7.813vw, 13.125rem);
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    animation: moveY 9s linear infinite;
+    z-index: 2;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
+  &__shape {
+    max-width: clamp(12.5rem, 10.625rem + 9.375vw, 20rem);
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    animation: rotateIn 90s linear infinite;
+
+  }
+}

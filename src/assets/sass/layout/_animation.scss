@@ -1,0 +1,86 @@
+/* ======================  Animation Start  ======================*/
+@keyframes scal {
+  0%, 100%{
+    transform: scale(1);
+  }
+   50%{
+    transform: scale(1.1);
+  }
+}
+@keyframes bounce {
+  
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes moveY {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes moveX {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes rotateOut {
+  from {
+    transform: rotate(360deg);
+
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes scale {
+  0%{
+    transform: scale(1);
+
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+/* ======================  Animation End  ======================*/

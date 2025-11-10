@@ -1,0 +1,43 @@
+/* ================================= Preloader Css Start =========================== */
+.preloader {
+  position: fixed;
+  z-index: 999999;
+  background-color: hsl(var(--body-bg));
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .loader__text {
+    width: fit-content;
+    font-weight: 600;
+    font-family: var(--heading-font);
+    letter-spacing: 2px;
+    font-size: 40px;
+    background: radial-gradient(circle closest-side, hsl(var(--base)) 94%, transparent) right/calc(200% - 1em) 100%;
+    animation: loader__circle 1s infinite alternate linear;
+
+    @include msm-screen {
+      font-size: rem(30px);
+    }
+  }
+
+  .loader__text::before {
+    content: attr(data-text);
+    line-height: 1em;
+    color: transparent;
+    background: inherit;
+    background-image: radial-gradient(circle closest-side, hsl(var(--white)) 94%, hsl(var(--black) / 0.1));
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+@keyframes loader__circle {
+  100% {
+    background-position: left;
+  }
+}
+
+/* ================================= Preloader Css End ===========================  */

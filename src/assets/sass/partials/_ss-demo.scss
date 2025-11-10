@@ -1,0 +1,39 @@
+/* ======================  Ss-demo Start  ======================*/
+.ss-demo {
+  perspective: 1200px; // depth feel
+
+  &__thumb-wrap {
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  
+  &__thumb {
+    max-width: rem(1000px);
+    margin-inline: auto;
+    border-radius: var(--b-radius-12);
+    transform: scale(0.9) rotateX(10deg);
+    opacity: 0.7;
+    transition:
+    transform 1.2s cubic-bezier(0.25, 1, 0.5, 1),
+    opacity 1s ease;
+    border: 1px solid hsl(var(--white)/0.09);
+    box-shadow: 1px 1px 5px 5px hsl(var(--white)/ 0.1);
+
+    img {
+      width: 100%;
+      display: block;
+      transform-style: preserve-3d;
+      border-radius: inherit;
+    }
+  }
+
+  &.active {
+    .ss-demo__thumb {
+      transform: scale(1.05) rotateX(0deg) translateZ(20px);
+      opacity: 1;
+    }
+  }
+}
+
+
+/* ======================  Ss-demo End  ======================*/

@@ -1,0 +1,102 @@
+@@include('../partials/_template-top.html')
+@@include('../partials/_header.html')
+<main>
+     @@include('../partials/_breadcrumb.html', {
+     "breadcrumbText": "Contact"
+     })
+
+     <!-- ==================== Contact Section Start Here ==================== -->
+     <div class="contact section-bg-2">
+          <div class="container">
+               <div class="row gy-4 justify-content-center my-100">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                         <div class="contact__item">
+                              <div class="contact__icon">
+                                   <i class="fa-solid fa-phone"></i>
+                              </div>
+                              <div class="contact__info">
+                                   <h6>Phone Number</h6>
+                                   <a href="tel:+0123456789">(+0) 123 456 789</a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                         <div class="contact__item">
+                              <div class="contact__icon">
+                                   <i class="fa-solid fa-envelope-open"></i>
+                              </div>
+                              <div class="contact__info">
+                                   <h6>Our Email</h6>
+                                   <a href="mailto:office123@gmail.com">office123@gmail.com</a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                         <div class="contact__item">
+                              <div class="contact__icon">
+                                   <i class="fa-solid fa-location-dot"></i>
+                              </div>
+                              <div class="contact__info">
+                                   <h6>Our Location</h6>
+                                   <span>Your Location New York 123</span>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                         <div class="contact__item">
+                              <div class="contact__icon">
+                                   <i class="fa-solid fa-headset"></i>
+                              </div>
+                              <div class="contact__info">
+                                   <h6>Support</h6>
+                                   <span>24/7 Support team</span>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="row gy-4 justify-content-between my-100">
+                    <div class="col-lg-7 col-xl-6">
+                         <form class="contact__form">
+                              <div class="row gy-4 ">
+                                   <div class="col-12">
+                                        <h3 class="section-heading__title">Send as message</h3>
+                                   </div>
+                                   <div class="col-lg-6">
+                                        <label class="form-label">Full name</label>
+                                        <input type="text" class="form-control" placeholder="First Name" required>
+                                   </div>
+                                   <div class="col-lg-6">
+                                        <label class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" placeholder="Email" required>
+                                   </div>
+                                   <div class="col-12">
+                                        <label class="form-label">Subject</label>
+                                        <input type="text" class="form-control" placeholder="Send Message" required>
+                                   </div>
+                                   <div class="col-12">
+                                        <label class="form-label">Message</label>
+                                        <textarea class="form-control" placeholder="Write Message" rows="4"
+                                             required></textarea>
+                                   </div>
+                                   <div class="col-12">
+                                        <button class="btn  btn--base">Send Message</button>
+                                   </div>
+                              </div>
+                         </form>
+                    </div>
+                    <div class="col-lg-5 col-xl-6">
+                         <div class="contact__map">
+                              <iframe
+                                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.7806761080233!2d-93.29138368446431!3d44.96844997909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b6ee2c87c91%3A0xc20dff2748d2bd92!2sWalker+Art+Center!5e0!3m2!1sen!2sus!4v1514524647889"
+                                   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                              </iframe>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <!-- ==================== Contact Section End Here ==================== -->
+</main>
+@@include('../partials/_footer.html')
+@@include('../partials/_template-bottom.html')

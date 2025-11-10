@@ -1,0 +1,90 @@
+<!-- meta tags and other links -->
+@@include('../partials/_template-top.html')
+
+<!--==========================  Dashboard Section Start  ==========================-->
+<div class="dashboard">
+  @@include('../partials/_user-sidebar.html')
+  <div class="dashboard__wrap">
+    @@include('../partials/_user-header.html')
+    <div class="dashboard__wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="table__topbar mb-4">
+              <h5>Upload File</h5>
+            </div>
+            <div class="upload__preview">
+              <div class="uplaod__box">
+                <span><i class="fa-solid fa-cloud-arrow-up"></i></span>
+                <input type="file" id="preview__image__file" class="d-none">
+                <label for="preview__image__file">Upload Preview Image</label>
+                <p>or drag and drop theme here</p>
+              </div>
+            </div>
+            <div class="row g-4">
+              <div class="col-lg-12">
+                <div class="upload__title">
+                  <h5>Product Details</h5>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="upload__form">
+                  <label class="form-label">Title</label>
+                  <input class="form-control" type="text" placeholder="Enter title">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="upload__form">
+                  <label class="form-label">Tags (maximum 10 tags)</label>
+                  <input class="form-control" type="text" placeholder="Enter tags">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="upload__form">
+                  <label class="form-label">Category</label>
+                  <select class="form-control select2">
+                    <option>Select Category</option>
+                    <option>Resume</option>
+                    <option>Invoice</option>
+                    <option>Ebook</option>
+                    <option>Report</option>
+                    <option>Legal Form</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="upload__form">
+                  <label class="form-label">License</label>
+                  <select class="form-control select2" data-minimum-results-for-search="Infinity">
+                    <option>Commercial</option>
+                    <option>Regular</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="upload__form">
+                  <label class="form-label">Description</label>
+                  <textarea class="form-control" placeholder="Write Description"></textarea>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="upload__form">
+                  <label class="form-label">Upload File</label>
+                  <input type="file" class="form-control">
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="upload__form">
+                  <button type="submit" class="btn btn--base w-100">SUBMIT NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--==========================  Dashboard Section End  ==========================-->
+
+@@include('../partials/_template-bottom.html')

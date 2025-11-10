@@ -1,0 +1,8 @@
+/* ======================  Font Weight Start  ======================*/
+@for $i from 1 through 9 {
+    .fw--#{$i}00 {
+        font-weight: #{$i}00 !important;
+    }
+}
+
+/* ======================  Font Weight End  ======================*/

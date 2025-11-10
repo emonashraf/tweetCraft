@@ -1,0 +1,56 @@
+/* ================================= Color Css Start =========================== */
+.text {
+    &--base {
+        color: hsl(var(--base)) !important;
+    }
+
+    &--base-two {
+        color: hsl(var(--base-two)) !important;
+    }
+
+    &--primary {
+        color: hsl(var(--primary)) !important;
+    }
+
+    &--secondary {
+        color: hsl(var(--secondary)) !important;
+    }
+
+    &--success {
+        color: hsl(var(--success)) !important;
+    }
+
+    &--danger {
+        color: hsl(var(--danger)) !important;
+    }
+
+    &--warning {
+        color: hsl(var(--warning)) !important;
+    }
+
+    &--info {
+        color: hsl(var(--info)) !important;
+    }
+
+    &--white {
+        color: hsl(var(--white)) !important;
+    }
+
+    &--white7 {
+        color: hsl(var(--white) / 0.7) !important;
+    }
+
+    &--black {
+        color: hsl(var(--black)) !important;
+    }
+
+    &--black7 {
+        color: hsl(var(--black) / 0.7) !important;
+    }
+
+    &--shadow {
+        text-shadow: 4px 1px 2px hsl(var(--black) / 0.6);
+    }
+}
+
+/* ================================= Color Css End =========================== */

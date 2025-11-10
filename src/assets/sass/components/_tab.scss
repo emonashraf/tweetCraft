@@ -1,0 +1,88 @@
+/* ================================= Tab Css Start =========================== */
+.tab-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.tab {
+    &:not(.nav--pills) {
+        gap: clamp(0.625rem, -0.156rem + 3.906vw, 3.75rem);
+    }
+
+    margin-bottom: clamp(1.563rem, 1.328rem + 1.172vw, 2.5rem);
+
+    .nav-item {
+        border-bottom: 0;
+
+        .nav-link {
+            position: relative;
+            color: hsl(var(--heading-color));
+            background-color: transparent !important;
+            transition: .4s;
+            padding: 0;
+            padding-bottom: 10px;
+
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 1px;
+                width: 0;
+                background-color: hsl(var(--base));
+                transition: 0.3s ease-in-out;
+            }
+
+
+            &.active {
+                color: hsl(var(--heading-color));
+
+                &::after {
+                    width: 100%;
+                }
+
+                &:hover {
+                    color: hsl(var(--heading-color));
+                }
+            }
+
+        }
+
+        #pills-disabled-tab.nav-link {
+            background-color: hsl(var(--black)) !important;
+            color: hsl(var(--heading-color));
+        }
+    }
+
+    &.nav--pills {
+        border-radius: 50px;
+        width: fit-content;
+        margin-inline: auto;
+        background-color: hsl(var(--base)/ 0.1);
+        backdrop-filter: blur(10px);
+        padding: 4px;
+        gap: 10px;
+
+        .nav-item {
+            .nav-link {
+                padding: rem(9px) rem(20px);
+                margin: 0;
+                border-radius: rem(50px);
+
+                &.active {
+                    background-color: hsl(var(--base)) !important;
+                    color: hsl(var(--white));
+                }
+
+                &::after,
+                &::before {
+                    display: none;
+                }
+            }
+
+        }
+    }
+}
+
+/* ================================= Tab Css End =========================== */

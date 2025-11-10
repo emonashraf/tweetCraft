@@ -1,0 +1,128 @@
+/* ======================  Trad Start  ======================*/
+.trad {
+    position: relative;
+    z-index: 2;
+
+    .col-md-6 {
+        &:nth-child(2) {
+            .trad__graph {
+                background-color: hsl(var(--aqua));
+            }
+
+            .badge {
+                background-color: hsl(var(--aqua));
+            }
+        }
+
+        &:nth-child(3) {
+            .trad__graph {
+                background-color: hsl(var(--warning-l-300));
+            }
+
+            .badge {
+                background-color: hsl(var(--warning-d-200));
+            }
+        }
+
+        &:nth-child(4) {
+            .trad__graph {
+                background-color: hsl(var(--success-l-300));
+            }
+
+            .badge {
+                background-color: hsl(var(--success-d-300));
+            }
+        }
+
+        &:nth-child(5) {
+            .trad__graph {
+                background-color: hsl(var(--base));
+            }
+
+            .badge {
+                background-color: hsl(var(--base));
+            }
+        }
+
+        &:nth-child(6) {
+            .trad__graph {
+                background-color: hsl(var(--orange));
+            }
+
+            .badge {
+                background-color: hsl(var(--orange));
+            }
+        }
+    }
+
+    &__card {
+        position: relative;
+        padding: rem(28px);
+        background-color: hsl(var(--base-two));
+        border-radius: var(--b-radius-16);
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background-image: linear-gradient(180deg, hsl(var(--base)/ 0.31), 70%, transparent);
+            border-radius: inherit;
+            z-index: -1;
+        }
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__rio {
+        display: flex;
+        align-items: center;
+        gap: clamp(0.625rem, 0.563rem + 0.313vw, 0.875rem);
+
+        .badge {
+            font-size: rem(16px);
+            font-weight: 600;
+            background-color: hsl(var(--purple));
+        }
+    }
+
+    &__graph {
+        background-color: hsl(var(--purple));
+        width: 90px;
+        height: 40px;
+    }
+
+    &__list {
+        margin-top: rem(20px);
+    }
+
+    &__list-item {
+        &:not(:last-child) {
+            margin-bottom: clamp(0.563rem, 0.516rem + 0.234vw, 0.75rem);
+            padding-bottom: clamp(0.563rem, 0.516rem + 0.234vw, 0.75rem);
+            border-bottom: 1px dashed hsl(var(--white)/ 0.13);
+        }
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__label {
+        padding-bottom: clamp(0.25rem, 0.125rem + 0.625vw, 0.75rem);
+        display: inline-block;
+    }
+
+    &__range {
+        font-size: rem(14px);
+    }
+
+
+
+}
+
+/* ======================  Trad End  ======================*/

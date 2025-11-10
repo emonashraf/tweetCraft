@@ -1,0 +1,83 @@
+/* ======================  User-create-form Start  ======================*/
+.create-form {
+    &__sidebar {
+        background-color: hsl(var(--white));
+        padding: 16px 14px;
+        border-radius: rem(12px);
+    }
+
+    &__item-wrap {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 8px;
+    }
+
+    &__items {
+        background-color: hsl(var(--black)/0.06);
+        border: 1px solid hsl(var(--black)/ 0.04);
+        border-radius: 4px;
+        padding: rem(16px);
+        display: grid;
+        place-items: center;
+        &.active{
+            border: 1px dashed hsl(var(--base));
+            
+        }
+
+        i {
+            font-size: rem(20px);
+        }
+
+        p {
+            font-size: rem(13px);
+        }
+    }
+
+    &__btn {
+        text-align: center;
+        margin-top: rem(12px);
+    }
+
+    &__dropzone-wrap {
+        background-color: hsl(var(--white));
+        padding: clamp(0.75rem, 0.547rem + 1.016vw, 1.563rem);
+        border-radius: 12px;
+        height: 100%;
+
+        .row {
+            height: 100%;
+        }
+    }
+
+    &__dropzone {
+        padding-block: clamp(0.75rem, 0.547rem + 1.016vw, 1.563rem);
+        padding-inline: clamp(0.625rem, 0.469rem + 0.781vw, 1.25rem);
+        border: 1px dashed hsl(var(--black)/ 0.16);
+        height: 100%;
+        border-radius: rem(9px);
+        height: 100%;
+        min-height: 300px;
+    }
+
+    &__action {
+        margin-top: 4px;
+        display: inline-flex;
+        gap: 8px;
+        background-color: hsl(var(--white));
+        padding: rem(10px);
+        border-radius: 4px;
+        box-shadow: 0 0 65px 0 hsl(var(--black) / 0.12);
+    }
+    &__action-btn{
+        display: flex;
+        gap: 2px;
+        flex-direction: column;
+        padding-inline: 8px;
+        color: hsl(var(--body-color));
+        i{
+            font-size: 18px;
+        }
+    }
+}
+
+/* ======================  User-create-form End  ======================*/

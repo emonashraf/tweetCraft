@@ -1,0 +1,113 @@
+/* ================================= Badge Css Start =========================== */
+.badge {
+  font-size: rem(12px);
+  border-radius: var(--b-radius-8);
+  padding: 8px 20px;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  
+  &--white {
+    background-color: hsl(var(--white) / 0.12) !important;
+    color: hsl(var(--white)) !important;
+  }
+
+  &--base {
+    background-color: hsl(var(--base) / 0.1) !important;
+    color: hsl(var(--base)) !important;
+  }
+
+  &--primary {
+    background-color: hsl(var(--primary) / 0.15) !important;
+    color: hsl(var(--primary)) !important;
+  }
+
+  &--secondary {
+    background-color: hsl(var(--secondary) / 0.15) !important;
+    color: hsl(var(--secondary)) !important;
+  }
+
+  &--success {
+    background-color: hsl(var(--success) / 0.15) !important;
+    color: hsl(var(--success)) !important;
+  }
+
+  &--danger {
+    background-color: hsl(var(--danger) / 0.15) !important;
+    color: hsl(var(--danger)) !important;
+  }
+
+  &--warning {
+    background-color: hsl(var(--warning) / 0.15) !important;
+    color: hsl(var(--warning)) !important;
+  }
+
+  &--info {
+    background-color: hsl(var(--info) / 0.15) !important;
+    color: hsl(var(--info)) !important;
+  }
+  &--purple{
+    background-color: hsl(var(--purple)) !important;
+  }
+}
+
+.icon-badge {
+  font-size: rem(14px);
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+
+  &::before {
+    content: "\f111";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 10px;
+    color: red;
+    display: inline-block;
+    margin-right: 6px;
+  }
+
+  &--base {
+    &::before {
+      color: hsl(var(--base)) !important;
+    }
+  }
+
+  &--primary {
+    &::before {
+      color: hsl(var(--primary)) !important;
+    }
+  }
+
+  &--secondary {
+    &::before {
+      color: hsl(var(--secondary)) !important;
+    }
+  }
+
+  &--success {
+    &::before {
+      color: hsl(var(--success)) !important;
+    }
+  }
+
+  &--danger {
+    &::before {
+      color: hsl(var(--danger)) !important;
+    }
+  }
+
+  &--warning {
+    &::before {
+      color: hsl(var(--warning)) !important;
+    }
+  }
+
+  &--info {
+    &::before {
+      color: hsl(var(--info)) !important;
+    }
+  }
+}
+
+/* ================================= Badge Css End =========================== */

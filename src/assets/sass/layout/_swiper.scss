@@ -1,0 +1,75 @@
+/* ================================= Swiper Css Start =========================== */
+.swiper-pagination {
+    position: relative;
+}
+
+.swiper-pagination {
+    position: relative;
+    display: flex;
+    z-index: 2;
+    width: fit-content !important;
+    margin-inline: auto;
+    background-color: hsl(var(--black) / 0.08);
+    border-radius: 12px;
+    padding: rem(7px);
+    backdrop-filter: blur(8px);
+    margin-top: 30px;
+
+}
+.swiper-pagination-bullet {
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+    background-color: hsl(var(--base));
+    z-index: 2;
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+// custom naviganiton
+.custom-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: hsl(var(--base));
+  border: 1px solid hsl(var(--border-color) / 0.12);
+  color: hsl(var(--white));
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s;
+  &:hover{
+    background-color: hsl(var(--base-d-200)) !important;
+  }
+  @include sm-screen{
+    display: none;
+  }
+}
+.custom-prev {
+  left: -50px;
+  @include xl-screen{
+    left: -20px;
+  }
+}
+.custom-next {
+  right: -50px;
+   @include xl-screen{
+    right: -20px;
+  }
+}
+.custom-btn:hover {
+  background-color: hsl(var(--base));
+}
+.custom-btn.swiper-button-disabled{
+    background-color: hsl(var(--base) / 0.2) !important;
+    backdrop-filter: blur(2px);
+}
+/* ================================= Swiper Css End =========================== */

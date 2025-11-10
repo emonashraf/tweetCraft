@@ -1,0 +1,50 @@
+/* ======================  Trust Start  ======================*/
+.choose-us {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    --icon-size: clamp(2.5rem, 2.344rem + 0.781vw, 3.125rem);
+
+  
+    &__card {
+        background-color: hsl(var(--white));
+        border: 1px solid hsl(var(--border-color));
+        padding: 30px 20px;
+        border-radius: var(--b-radius-12);
+        transition: 0.3s ease;
+        transform: scale(1);
+        height: 100%;
+        &:hover{
+            border: 1px solid hsl(var(--base-l-500));
+            box-shadow:  var(--box-shadow); 
+            box-shadow: var(--box-shadow);
+            transform: scale(1.02);
+        }
+    }
+
+    &__icon {
+        width: var(--icon-size);
+        height: var(--icon-size);
+        background-color: hsl(var(--base-l-900));
+        color: hsl(var(--base));
+        border-radius: var(--b-radius-12);
+        display: grid;
+        place-items: center;
+        margin-bottom: clamp(0.625rem, 0.469rem + 0.781vw, 1.25rem);
+        i{
+            font-size: 16px;
+        }
+    }
+
+    &__title {
+        margin-bottom: clamp(0.5rem, 0.344rem + 0.781vw, 1.125rem);
+    }
+}
+
+
+
+     
+ 
+  
+
+/* ======================  Trust End  ======================*/

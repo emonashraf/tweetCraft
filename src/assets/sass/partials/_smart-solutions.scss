@@ -1,0 +1,219 @@
+/* ======================  Features Start  ======================*/
+.smart-solutions {
+    --icon-size: clamp(2.188rem, 2.109rem + 0.391vw, 2.5rem);
+
+    &__card {
+        display: flex;
+        gap: clamp(0.875rem, 0.719rem + 0.781vw, 1.5rem);
+        padding-bottom: clamp(0.375rem, 0.25rem + 0.625vw, 0.875rem);
+    }
+
+    &__icon {
+        flex-shrink: 0;
+        width: var(--icon-size);
+        height: var(--icon-size);
+        border-radius: var(--b-radius-8);
+        display: grid;
+        place-items: center;
+        background-image: linear-gradient(180deg, hsl(var(--base)) 0%, transparent 100%);
+
+        img {
+            max-width: 80%;
+        }
+
+    }
+
+    &__title {
+        font-size: clamp(1rem, 0.969rem + 0.156vw, 1.125rem);
+        margin-bottom: clamp(0.625rem, 0.406rem + 1.094vw, 1.5rem);
+    }
+
+    &__banner {
+        position: relative;
+        background-color: hsl(var(--base-two));
+        max-width: clamp(15.625rem, 11.719rem + 19.531vw, 31.25rem);
+        aspect-ratio: 1 / 1;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        margin-left: auto;
+
+        @include md-screen {
+            margin-inline: auto;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            max-width: clamp(10rem, 7.5rem + 12.5vw, 20rem);
+            aspect-ratio: 1 / 1;
+            background-color: hsl(var(--base-d-800));
+            border-radius: 50%;
+            z-index: -2;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: clamp(5.625rem, 4.531rem + 5.469vw, 10rem);
+            border-radius: 50%;
+            aspect-ratio: 1 / 1;
+            background-color: hsl(var(--base));
+            filter: blur(20px);
+        }
+    }
+
+    &__center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+        width: clamp(5rem, 3.214rem + 4.762vw, 7.5rem);
+        aspect-ratio: 1 / 1;
+        background-color: hsl(var(--base-two));
+        border-radius: 50%;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+            font-size: 30px;
+        }
+
+    }
+
+    .svg-wrapper {
+        position: relative;
+        max-width: clamp(12.5rem, 10.156rem + 11.719vw, 21.875rem);
+    }
+
+    &__chart {
+        width: 100%;
+        height: 100%;
+        fill: none;
+
+        path {
+            stroke: hsl(var(--white)/0.6);
+            stroke-width: 1.2;
+            stroke-dasharray: 4 4;
+            stroke-linecap: round;
+        }
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform-origin: center center;
+    }
+
+    .trail {
+        width: 40px;
+        height: 4px;
+        border-radius: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform-origin: left center;
+        pointer-events: none;
+    }
+
+    .badge {
+        position: absolute;
+
+        &:nth-child(1) {
+            top: 6%;
+            left: 33%;
+
+            @include lg-screen {
+                top: 0;
+                left: 25%;
+            }
+
+        }
+
+        &:nth-child(2) {
+            top: 18%;
+            right: 10%;
+
+            @include lg-screen {
+                top: 15%;
+                right: 0%;
+            }
+        }
+
+        &:nth-child(3) {
+            top: 47%;
+            right: 7%;
+
+            @include lg-screen {
+                top: 46%;
+                right: 0%;
+            }
+        }
+
+        &:nth-child(4) {
+            bottom: 9%;
+            right: 15%;
+
+            @include lg-screen {
+                bottom: 0;
+                right: 10%;
+            }
+        }
+
+        &:nth-child(5) {
+            bottom: 6%;
+            left: 18%;
+
+            @include lg-screen {
+                bottom: 0%;
+                left: 6%;
+            }
+        }
+
+        &:nth-child(6) {
+            bottom: 35%;
+            left: 5%;
+
+            @include lg-screen {
+                bottom: 31%;
+                left: 3%;
+            }
+
+            @include sm-screen {
+                bottom: 32%;
+                left: -5%;
+            }
+        }
+
+        &:nth-child(7) {
+            top: 33%;
+            left: 0;
+
+            @include lg-screen {
+                top: 29%;
+            }
+
+            @include sm-screen {
+                top: 30%;
+                left: -5%;
+            }
+        }
+
+    }
+}
+
+/* ======================  Features End  ======================*/

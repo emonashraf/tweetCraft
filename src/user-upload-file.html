@@ -1,0 +1,257 @@
+<!-- meta tags and other links -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>SassSifty</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <!-- line awesome -->
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <!-- bx slider -->
+  <link rel="stylesheet" href="assets/css/jquery.bxslider.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="assets/css/select2.min.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+  <!--==================== Preloader Start ====================-->
+<div class="preloader">
+    <div class="loader__text" data-text="wStacks"></div>
+</div>
+<!--==================== Preloader End ====================-->
+
+
+  <!-- ==================== Scroll to Top Start ==================== -->
+  <a class="scroll-top"><i class="fas fa-angle-double-up"></i></a>
+  <!-- ==================== Scroll to Top End ==================== -->
+
+
+  <!--==========================  Overlay Start  ==========================-->
+  <div class="overlay"></div>
+  <!--==========================  Overlay End  ==========================-->
+
+<!--==========================  Dashboard Section Start  ==========================-->
+<div class="dashboard">
+  <!--==========================   User-sidebar Start  ==========================-->
+<div class="dashboard__sidebar">
+  <div class="sidebar__close"><i class="las la-times"></i></div>
+  <div class="dashboard__logo">
+    <a href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
+  </div>
+  <div class="dashboard__menu">
+    <ul>
+      <li><a href="user-dashboard.html" class="active"><i class="fa-solid fa-table-columns"></i>Dashboard</a></li>
+      <li class="upload__file__sb"><a href="user-upload-file.html"><i class="fa-solid fa-cloud-arrow-up"></i>
+          Upload File</a></li>
+      <li>
+        <a href="#collapseExample" data-bs-toggle="collapse" role="button" aria-expanded="false"
+          aria-controls="collapseExample"><i class="fas fa-robot"></i> Bot Management
+          <span class="dropdown__arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
+        <div class="collapse" id="collapseExample">
+          <div class="sidebar__dropdown">
+            <ul>
+              <li><a href="user-my-bot.html" class="active">My Bots</a></li>
+              <li><a href="user-create-bot.html">Create Boat</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li><a href="user-reports.html"><i class="fa-solid fa-chart-simple"></i>Reports & Insights</a></li> 
+      <li><a href="user-withdraw.html"><i class="fa-solid fa-coins"></i> Withdraw</a></li>
+      <li><a href="user-deposit.html"><i class="fa-solid fa-money-bill-transfer"></i> Deposit</a></li>
+      <li><a href="user-transactions.html"><i class="fa-solid fa-list-ul"></i> Transactions</a></li>
+      <li><a href="user-support-tickets.html"><i class="fa-solid fa-headset"></i> Support Ticket</a></li>
+    </ul>
+  </div>
+</div>
+<!--==========================  User-sidebar End  ==========================-->
+  <div class="dashboard__wrap">
+    <!--==========================   User-header Start  ==========================-->
+<div class="dashboard__header">
+  <div class="input-group search__box">
+    <input type="text" class="form-control" placeholder="Search">
+    <button type="submit" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </div>
+  <div class="dashboard__header__widgets-wrap">
+    <div class="dashboard__header__widgets">
+      <div class="dropdown">
+        <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="notification__btn">
+            <i class="las la-bell"></i>
+            <span class="notification__count">
+              <span>21</span>
+            </span>
+          </span>
+        </button>
+        <div class="dropdown-menu">
+          <div class="notification__wrap">
+            <div class="notification__header">
+              <h4>Notifications</h4>
+              <span class="badge badge--base">12 Unread</span>
+            </div>
+            <div class="notification__body">
+              <a href="#">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <span>26 minutes ago</span>
+              </a>
+              <a href="#">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <span>26 minutes ago</span>
+              </a>
+              <a href="#">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <span>26 minutes ago</span>
+              </a>
+              <a href="#">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <span>26 minutes ago</span>
+              </a>
+              <a href="#">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <span>26 minutes ago</span>
+              </a>
+            </div>
+            <div class="notification__footer">
+              <a href="#" class="btn btn--sm btn--base w-100">View all</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-toggle d-flex align-items-center gap-2" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <span class="profile__dropdown">
+            <img src="assets/images/user.jpg" alt="image">
+            <span>Max Sujak</span>
+          </span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="user-profile-setting.html">Profile Setting</a></li>
+          <li><a class="dropdown-item" href="user-change-password.html">Change Password</a></li>
+          <li><a class="dropdown-item" href="two-factor.html">2FA Security</a></li>
+          <li><a class="dropdown-item" href="index.html">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+    <span class="sidebar__open"><i class="fa-solid fa-bars"></i></span>
+  </div>
+</div>
+<!--==========================  User-header End  ==========================-->
+    <div class="dashboard__wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="table__topbar mb-4">
+              <h5>Upload File</h5>
+            </div>
+            <div class="upload__preview">
+              <div class="uplaod__box">
+                <span><i class="fa-solid fa-cloud-arrow-up"></i></span>
+                <input type="file" id="preview__image__file" class="d-none">
+                <label for="preview__image__file">Upload Preview Image</label>
+                <p>or drag and drop theme here</p>
+              </div>
+            </div>
+            <div class="row g-4">
+              <div class="col-lg-12">
+                <div class="upload__title">
+                  <h5>Product Details</h5>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="upload__form">
+                  <label class="form-label">Title</label>
+                  <input class="form-control" type="text" placeholder="Enter title">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="upload__form">
+                  <label class="form-label">Tags (maximum 10 tags)</label>
+                  <input class="form-control" type="text" placeholder="Enter tags">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="upload__form">
+                  <label class="form-label">Category</label>
+                  <select class="form-control select2">
+                    <option>Select Category</option>
+                    <option>Resume</option>
+                    <option>Invoice</option>
+                    <option>Ebook</option>
+                    <option>Report</option>
+                    <option>Legal Form</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="upload__form">
+                  <label class="form-label">License</label>
+                  <select class="form-control select2" data-minimum-results-for-search="Infinity">
+                    <option>Commercial</option>
+                    <option>Regular</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="upload__form">
+                  <label class="form-label">Description</label>
+                  <textarea class="form-control" placeholder="Write Description"></textarea>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="upload__form">
+                  <label class="form-label">Upload File</label>
+                  <input type="file" class="form-control">
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="upload__form">
+                  <button type="submit" class="btn btn--base w-100">SUBMIT NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--==========================  Dashboard Section End  ==========================-->
+
+<!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- Magnific Popup Js -->
+<script src="assets/js/magnific-popup.min.js"></script>
+<!-- Scrollreveal Js -->
+<script src="assets/js/scrollreveal.min.js"></script>
+<!-- bx slider js -->
+<script src="assets/js/jquery.bxslider.min.js"></script>
+<!-- Odometer Js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- Select2 Js -->
+<script src="assets/js/select2.min.js"></script>
+<!-- Apexchart js -->
+<script src="assets/js/apexcharts.js"></script>
+<!-- Matter js -->
+<script src="assets/js/matter.min.js"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

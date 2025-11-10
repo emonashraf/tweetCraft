@@ -1,0 +1,43 @@
+/* ======================  Cookie-policy Start  ======================*/
+.cookie-policy {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(1.875rem, 1.406rem + 2.344vw, 3.75rem);
+    }
+
+    &__title {
+        margin-bottom: clamp(1rem, 0.875rem + 0.625vw, 1.5rem);
+    }
+    &__desc{
+        line-height: 1.9;
+    }
+
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(0.75rem, 0.688rem + 0.313vw, 1rem);
+        padding-left: clamp(0.625rem, 0.469rem + 0.781vw, 1.25rem);
+        li {
+            position: relative;
+            padding-left: 18px;
+            line-height: 1.9;
+            &::before {
+                position: absolute;
+                left: 0;
+                top: 8px;
+                content: "\f111";
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                font-size: 8px;
+                color: hsl(var(--base));
+
+                
+
+            }
+        }
+    }
+}
+
+/* ======================  Cookie-policy End  ======================*/

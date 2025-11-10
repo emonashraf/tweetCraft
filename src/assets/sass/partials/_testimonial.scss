@@ -1,0 +1,65 @@
+/* ======================  Testimonial Start  ======================*/
+.testimonial {
+  position: relative;
+  margin-inline: auto;
+  --icon-size: clamp(2.188rem, 2.031rem + 0.781vw, 2.813rem);
+
+  &__card {
+    transition: 0.3s;
+    height: 100%;
+    width: 100%;
+    border-radius: var(--b-radius-12);
+    overflow: hidden;
+    max-width: rem(420px);
+    margin-inline: auto;
+    background-color: hsl(var(--white));
+    border: 1px solid hsl(var(--border-color));
+    padding: clamp(0.75rem, 0.547rem + 1.016vw, 1.563rem);
+    transition: 0.3s;
+
+    &:hover {
+      border: 1px solid hsl(var(--base)/0.2);
+      box-shadow:  var(--box-shadow);
+    }
+  }
+
+  &__body {
+    width: 100%;
+    transition: 0.3s;
+    z-index: 2;
+  }
+
+  &__top {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    border-top: 1px solid hsl(var(--white)/ 0.1);
+    padding-bottom: clamp(0.75rem, 0.547rem + 1.016vw, 1.563rem);
+  }
+
+  &__thumb {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    margin-bottom: 3px;
+    font-weight: 500;
+  }
+
+  &__desc {
+    font-size: 18px;
+    margin-top: clamp(0.625rem, 0.531rem + 0.469vw, 1rem);
+  }
+}
+
+/* ======================  Testimonial End  ======================*/

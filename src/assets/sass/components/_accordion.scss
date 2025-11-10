@@ -1,0 +1,72 @@
+/* =========================== Accordion Css start ============================= */
+.accordion {
+  position: relative;
+  z-index: 1;
+  --padding-y: clamp(1.25rem, 1.094rem + 0.781vw, 1.875rem);
+  margin-block: calc(-1 * var(--padding-y));
+  .accordion-item {
+    background-color: transparent !important;
+    overflow: hidden;
+    border: none;
+    &:not(:last-child) {
+      border-bottom: 1px solid hsl(var(--border-color));
+    }
+  }
+
+  .accordion-header {
+    line-height: 1;
+  }
+
+  .accordion-button {
+    position: relative;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0 !important;
+    color: var(--heading-color);
+    font-size: 20px;
+    font-weight: 600;
+    padding-block: var(--padding-y);
+    @include sm-screen {
+      font-size: 16px;
+    }
+
+    &::after {
+      background-image: none;
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      content: '\f106';
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 1em;
+      height: 1em;
+      transform: translateY(-50%);
+      transform-origin: center center;
+      transition: transform 0.3s ease;
+    }
+
+    &[aria-expanded='false']::after {
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    &:focus,
+    &:not(.collapsed) {
+      box-shadow: none;
+    }
+  }
+
+  .accordion-body {
+    padding: 0;
+    padding-bottom: 20px;
+    background-color: transparent;
+    color: hsl(var(--body-color));
+
+    @include sm-screen {
+      font-size: 14px;
+    }
+  }
+}
+
+
+/* ================================= Accordion Css End =========================== */

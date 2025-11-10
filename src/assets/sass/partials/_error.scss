@@ -1,0 +1,86 @@
+/* ======================  Error Section Start  ======================*/
+.error {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  &__main {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 230px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-bottom: 5px;
+      font-size: clamp(3.75rem, 2.875rem + 4.375vw, 7.25rem);
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      font-size: 60px;
+      line-height: 1;
+    }
+
+    h4 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-size: 16px;
+      max-width: 500px;
+      margin-bottom: 30px;
+    }
+
+    a {
+      display: inline-flex !important;
+      align-items: center;
+      gap: 4px;
+      font-size: 14px;
+      padding: 13px 20px;
+
+      i {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .error__main img {
+    max-width: 170px;
+    margin-bottom: 15px;
+  }
+
+  .error__main h2 {
+    margin-bottom: 10px;
+    font-size: 50px;
+  }
+
+  .error__main h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  .error__main h4 {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  .error__main p {
+    font-size: 14px;
+    max-width: 440px;
+  }
+}
+
+/* ======================  Error Section End  ======================*/

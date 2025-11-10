@@ -1,0 +1,98 @@
+<!-- meta tags and other links -->
+@@include('../partials/_template-top.html')
+
+<!--==========================  Dashboard Section Start  ==========================-->
+<div class="dashboard">
+  @@include('../partials/_user-sidebar.html')
+  <div class="dashboard__wrap">
+    @@include('../partials/_user-header.html')
+    <div class="dashboard__wrapper">
+      <div class="profile-setting">
+        <div class="row gy-4">
+          <div class="col-xl-5">
+            <div class="card">
+              <div class="profile-setting__inner">
+                <div class="custom-dropzone dropzone-sm">
+                  <label for="fileInput" class="dropzone-filed" tabindex="0" data-drag-text="Drop Here...">
+                    <span class="dropzone-filed__preview active">
+                      <img src="assets/images/user.jpg" alt="Image">
+                    </span>
+                    <span class="custom-dropzone__icon"><i class="fa-solid fa-image"></i></span>
+                  </label>
+                  <input type="file" id="fileInput" accept=".png, .jpg, .jpeg" required>
+                </div>
+                <p class="profile-setting__file-desc">Supported Files: <strong>.jpg,
+                    .jpeg,.png</strong>Image will be resized into
+                  <strong>116x116px</strong>
+                </p>
+  
+                <div class="profile-setting__content">
+                  <ul class="profile-setting__info-list">
+                    <li class="profile-setting__info">
+                      <h6 class="profile-setting__info-title"><i class="ti ti-user"></i> Username
+                        :</h6>
+                      <span>username</span>
+                    </li>
+                    <li class="profile-setting__info">
+                      <h6 class="profile-setting__info-title"><i class="ti ti-mail"></i> Email :
+                      </h6>
+                      <span>demouser@gmail.com</span>
+                    </li>
+                    <li class="profile-setting__info">
+                      <h6 class="profile-setting__info-title"><i class="ti ti-phone"></i> Mobile :
+                      </h6>
+                      <span>(+0) 123 456 7890</span>
+                    </li>
+                    <li class="profile-setting__info">
+                      <h6 class="profile-setting__info-title"><i class="ti ti-map-pin"></i>
+                        Country : </h6>
+                      <span>United States</span>
+                    </li>
+                  </ul>
+  
+                </div>
+  
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-7">
+            <div class="card">
+              <div class="profile-setting__form">
+                <div class="row gy-4">
+                  <div class="col-xxl-6">
+                    <input type="text" class="form-control" name="text" placeholder="Enter First Name">
+                  </div>
+                  <div class="col-xxl-6">
+                    <input type="text" class="form-control" name="text" placeholder="Enter Last Name">
+                  </div>
+                  <div class="col-xxl-6">
+                    <input type="email" class="form-control" placeholder="Enter Email">
+                  </div>
+                  <div class="col-xxl-6">
+                    <input type="email" class="form-control" placeholder="Phone">
+                  </div>
+                  <div class="col-xxl-6">
+                    <input type="text" class="form-control" placeholder="Enter City">
+                  </div>
+                  <div class="col-xxl-6">
+                    <input type="text" class="form-control" placeholder="Enter zip">
+                  </div>
+                  <div class="col-lxx-6">
+                    <input type="text" class="form-control" value="Dhaka, Bangladesh" readonly>
+                  </div>
+                  <div class="col-xxl-12 text-end">
+                    <button type="submit" class="btn btn--base btn--sm ">Update Profile</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--==========================  Dashboard Section End  ==========================-->
+
+@@include('../partials/_template-bottom.html')

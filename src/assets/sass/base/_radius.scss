@@ -1,0 +1,14 @@
+/* ======================  Radius Start  ======================*/
+@for $i from 0 through 32 {
+    @if $i % 2==0 {
+        .radius--#{$i} {
+            border-radius: #{$i}px !important;
+        }
+    }
+}
+
+.radius--50 {
+    border-radius: 50% !important;
+}
+
+/* ======================  Radius End  ======================*/

@@ -1,0 +1,121 @@
+/* ================================= Common Typography Css Start =========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: hsl(var(--body-color));
+  word-break: break-word;
+  background-color: hsl(var(--body-bg));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(0.875rem, 0.844rem + 0.156vw, 1rem);
+}
+main{
+  overflow: hidden;
+}
+
+p {
+  font-size: clamp(0.875rem, 0.844rem + 0.156vw, 1rem);
+  font-weight: 400;
+  margin: 0;
+  color: hsl(var(--body-color));
+}
+
+span {
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+  font-family: var(--heading-font);
+  color: hsl(var(--heading-color));
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(1.875rem, 1.125rem + 3.75vw, 4.875rem);
+}
+
+h2 {
+  font-size: clamp(1.625rem, 1.406rem + 1.094vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 1.143rem + 0.952vw, 2rem);
+}
+
+h4 {
+  font-size: clamp(1.125rem, 1.031rem + 0.469vw, 1.5rem);
+}
+
+h5 {
+  font-size: clamp(1.063rem, 1.016rem + 0.234vw, 1.25rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 0.969rem + 0.156vw, 1.125rem);
+  font-weight: 600;
+}
+
+h1>a,
+h2>a,
+h3>a,
+h4>a,
+h5>a,
+h6>a {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  transition: 0.2s linear;
+  line-height: inherit;
+}
+
+a {
+  display: inline-block;
+  transition: 0.3s;
+  text-decoration: none;
+  color: hsl(var(--heading-color));
+}
+
+a:hover {
+  color: hsl(var(--base));
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+select {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+/* ================================= Common Typography Css End =========================== */

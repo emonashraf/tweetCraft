@@ -1,0 +1,101 @@
+/* ================================= Background Color Css Start =========================== */
+.bg {
+    &--base {
+        background-color: hsl(var(--base)) !important;
+    }
+
+    &--base-two {
+        background-color: hsl(var(--base-two)) !important;
+    }
+
+    &--primary {
+        background-color: hsl(var(--primary)) !important;
+    }
+
+    &--secondary {
+        background-color: hsl(var(--secondary)) !important;
+    }
+
+    &--success {
+        background-color: hsl(var(--success)) !important;
+    }
+
+    &--danger {
+        background-color: hsl(var(--danger)) !important;
+    }
+
+    &--warning {
+        background-color: hsl(var(--warning)) !important;
+    }
+
+    &--info {
+        background-color: hsl(var(--info)) !important;
+    }
+
+    &--white {
+        background-color: hsl(var(--white)) !important;
+    }
+
+    &--black {
+        background-color: hsl(var(--black)) !important;
+    }
+
+    &--aqua {
+        background-color: hsl(var(--aqua)) !important;
+    }
+
+    &--purple {
+        background-color: hsl(var(--purple)) !important;
+    }
+
+    &--orange {
+        background-color: hsl(var(--orange)) !important;
+    }
+    &--pink{
+        background-color: hsl(var(--pink)) !important;
+    }
+}
+
+.hover-bg {
+    &--base:hover {
+        background-color: hsl(var(--base)) !important;
+    }
+
+    &--base-two:hover {
+        background-color: hsl(var(--base-two)) !important;
+    }
+
+    &--primary:hover {
+        background-color: hsl(var(--primary)) !important;
+    }
+
+    &--secondary:hover {
+        background-color: hsl(var(--secondary)) !important;
+    }
+
+    &--success:hover {
+        background-color: hsl(var(--success)) !important;
+    }
+
+    &--danger:hover {
+        background-color: hsl(var(--danger)) !important;
+    }
+
+    &--warning:hover {
+        background-color: hsl(var(--warning)) !important;
+    }
+
+    &--info:hover {
+        background-color: hsl(var(--info)) !important;
+    }
+
+    &--white:hover {
+        background-color: hsl(var(--white)) !important;
+    }
+
+    &--black:hover {
+        background-color: hsl(var(--black)) !important;
+    }
+}
+
+/* ================================= Background Color Css End =========================== */
