@@ -91,11 +91,12 @@
 
         blockquote {
             position: relative;
-            background-color: hsl(var(--white)/ 0.08);
+            background-color: hsl(var(--base)/ 0.06);
             padding-block: clamp(1.25rem, -0.089rem + 3.571vw, 3.125rem);
             padding-inline: clamp(0.875rem, 0.161rem + 1.905vw, 1.875rem);
             border-radius: var(--b-radius-12);
             border: 1px solid hsl(var(--black)/ 0.04);
+            margin-bottom: 0;
 
             z-index: 1;
 
@@ -108,7 +109,7 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 font-size: 120px;
-                color: hsl(var(--white)/ 0.06);
+                color: hsl(var(--base)/ 0.06);
                 z-index: -1;
             }
 
@@ -121,6 +122,12 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 10px;
+        border: 1px solid hsl(var(--border-color));
+        border-radius: var(--b-radius-12);
+        padding: clamp(0.5rem, 0.391rem + 0.547vw, 0.938rem);
+        background-color: hsl(var(--base-l-900)/0.2);
+        margin-top: 20px;
+        
 
         .social-list__title {
             color: hsl(var(--heading-color));
@@ -131,7 +138,7 @@
 
             i {
                 color: hsl(var(--base));
-                font-size: rem(30px);
+                font-size: clamp(1rem, 0.781rem + 1.094vw, 1.875rem);
             }
 
         }

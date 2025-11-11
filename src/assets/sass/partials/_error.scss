@@ -4,6 +4,14 @@
   z-index: 1;
   overflow: hidden;
 
+  &::before {
+    background-image: radial-gradient(125% 125% at 50% 90%, hsl(var(--white)) 35%, hsl(var(--base)/ 0.5) 100%);
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+
   &__main {
     text-align: center;
     min-height: 100vh;

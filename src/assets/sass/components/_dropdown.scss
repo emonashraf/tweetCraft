@@ -9,7 +9,7 @@
 
      .dropdown-btn {
           min-width: 30px;
-          background-color: hsl(var(--white)/ 0.06);
+          background-color: hsl(var(--white));
           border-radius: rem(8px);
           border: 1px solid hsl(var(--black)/ 0.04);
           padding: rem(8px) rem(20px);
@@ -55,13 +55,11 @@
           left: 0;
           transition: .3s;
           overflow: hidden;
-          box-shadow: var(--box-shadow);
-          border-color: hsl(var(--white) / .06);
+          box-shadow: 0px 0px 15px 0px hsl(var(--black) / .05);
+          border-color: hsl(var(--black) / .05);
           border-radius: 7px;
           min-width: 200px;
           margin-top: 0 !important;
-          background-color: hsl(var(--black));
-          padding-inline: 6px;
 
           &-end {
                left: auto;
@@ -69,7 +67,7 @@
           }
 
           li {
-               border-bottom: 1px solid hsl(var(--white) / .03);
+               border-bottom: 1px solid hsl(var(--black) / .03);
 
                &:last-child {
                     border-bottom: 0;
@@ -86,7 +84,6 @@
                color: hsl(var(--body-color));
                border-radius: 5px;
                transition: .3s;
-               
 
 
                @include md-screen {
@@ -102,8 +99,8 @@
                &:active,
                &:focus,
                &:hover {
-                    color: hsl(var(--white)) !important;
-                    background-color: hsl(var(--base));
+                    color: hsl(var(--base)) !important;
+                    background-color: hsl(var(--base-l-900)/ 0.5);
                }
           }
      }

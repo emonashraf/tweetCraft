@@ -22,11 +22,13 @@
         overflow: hidden;
         transition: 0.3s ease;
         cursor: pointer;
+        background-color: hsl(var(--base));
         color: hsl(var(--white));
         &.active,
         &:hover,
         &:focus {
-            color: hsl(var(--base)) !important;
+            background-color: hsl(var(--base-d-200)) !important;
+            color: hsl(var(--white));
         }
     }
 }

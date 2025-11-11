@@ -252,8 +252,8 @@
 .common__pattern {
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(to right, hsl(var(--white)/ 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, hsl(var(--white)/ 0.05) 1px, transparent 1px);
+  background-image: linear-gradient(to right, hsl(var(--white)) 1px, transparent 1px),
+    linear-gradient(to bottom, hsl(var(--white)5) 1px, transparent 1px);
   background-size: clamp(1.563rem, 1.016rem + 2.734vw, 3.75rem) clamp(1.563rem, 1.016rem + 2.734vw, 3.75rem);
   mask-image: radial-gradient(ellipse 60% 70% at 50% 50%, hsl(var(--black)) 30%, transparent 70%);
 }

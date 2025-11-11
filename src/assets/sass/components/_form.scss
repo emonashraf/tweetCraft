@@ -46,15 +46,15 @@ label.required:after {
   width: 100%;
   padding: var(--common-p);
   border-radius: var(--common-radius);
-  background-color: hsl(var(--white)/ 0.04);
-  border: 1px solid hsl(var(--white)/ 0.12);
+  background-color: hsl(var(--white));
+  border: 1px solid var(--common-b-color);
   color: hsl(var(--body-color)) !important;
   font-size: var(--common-f-size);
   line-height: 1.5;
   backdrop-filter: blur(10px);
 
   &::placeholder {
-    color: hsl(var(--white) / 0.4);
+    color: hsl(var(--body-color) / 0.7);
   }
 
   &:focus {
@@ -188,7 +188,7 @@ input[type='number'] {
     border-radius: 3px;
     width: 16px;
     height: 16px;
-    border: 1px solid hsl(var(--white) / 0.16);
+    border: 1px solid hsl(var(--black) / 0.5);
     cursor: pointer;
     margin-left: 0;
     margin-top: 0;
@@ -354,9 +354,10 @@ input[type='number'] {
 /* --======================Custom Input group Start ======================*/
 
 .input-group {
-  border-radius: var(--common-radius);
-  border: 1px solid hsl(var(--white) / 0.12);
+  border-radius: var(--common-radius) !important;
+  border: 1px solid var(--common-b-color);
   background-color: hsl(var(--white)/ 0.04);
+  transition: 0.1s;
   backdrop-filter: blur(10px);
 
   &> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
@@ -386,20 +387,26 @@ input[type='number'] {
  
 
   .btn {
+    padding-inline: 14px;
+    border-radius: calc(var(--common-radius) - 2px);
+    color: hsl(var(--body-color)) !important;
     &:focus {
       border: none !important;
     }
+    &--base{
+      color: hsl(var(--white)) !important;
+    }
   }
 
+
   &:focus-within {
-    border: 1px solid hsl(var(--white) / 0.1);
+    border-color: hsl(var(--base));
   }
 
   .input-group-text {
-    padding-right: 0;
     border-width: 0px !important;
-    border-radius: var(--common-radius);
-    background-color: transparent;
+    border-radius: calc(var(--common-radius) - 2px ) ;
+    background-color: hsl(var(--base));
     color: hsl(var(--white));
   }
    .form-control+.input-group-text{

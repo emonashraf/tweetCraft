@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Title -->
-  <title>SassSifty</title>
+  <title>TwitCraft</title>
   <!-- Favicon -->
   <link rel="shortcut icon" href="assets/images/logo/favicon.png">
   <!-- Bootstrap -->
@@ -199,540 +199,81 @@
         </div>
       </div>
       <div class="row mt-4">
-        <div class="col-lg-12">
+        <div class="col-xl-4">
           <div class="card">
-            <div class="table__topbar">
-              <h5>Active Bots Summary</h5>
-              <div class="table__topbar__right">
-                <div class="input-group">
-                  <input type="text" class="form-control form-control-sm" placeholder="Search">
-                  <button type="submit" class="btn btn--sm"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div class="row gy-4">
+              <div class="col-12">
+                <h4 class="title">Generate Tweet</h4>
+                <p>Create Ai-powered content in seconds</p>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Topic or Idea</label>
+                <textarea class="form-control" placeholder="What do you want to tweet about?"></textarea>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Content Type</label>
+                <div class="d-flex gap-3">
+                  <a href="#" class="btn btn--base w-50">Tweet</a>
+                  <a href="#" class="btn btn-outline--base w-50">Thread</a>
                 </div>
-                <div class="filter__wrap">
-                  <button class="btn btn--base btn--sm filter__btn"><i class="fa-solid fa-filter"></i>Filter</button>
-                  <div class="filter__main">
-                    <div class="row g-3">
-                      <div class="col-lg-12">
-                        <div class="text-end">
-                          <span class="filter__close"><i class="fa-solid fa-xmark"></i></span>
-                        </div>
-                      </div>
-                      <div class="col-lg-12">
-                        <div class="filter__topbar">
-                          <h5>Filter</h5>
-                          <a href="#">Clear All</a>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="filter__card">
-                          <h5>File Type</h5>
-                          <div class="filter__form">
-                            <div class="form-check">
-                              <label class="form-check-label" for="filter__check1">
-                                PDF
-                              </label>
-                              <input class="form-check-input" type="checkbox" value="" id="filter__check1">
-                            </div>
-                            <div class="form-check">
-                              <label class="form-check-label" for="filter__check2">
-                                DOCX
-                              </label>
-                              <input class="form-check-input" type="checkbox" value="" id="filter__check2">
-                            </div>
-                            <div class="form-check">
-                              <label class="form-check-label" for="filter__check3">
-                                ZIP
-                              </label>
-                              <input class="form-check-input" type="checkbox" value="" id="filter__check3">
-                            </div>
-                            <div class="form-check">
-                              <label class="form-check-label" for="filter__check4">
-                                RTF
-                              </label>
-                              <input class="form-check-input" type="checkbox" value="" id="filter__check4">
-                            </div>
-                            <div class="form-check">
-                              <label class="form-check-label" for="filter__check5">
-                                Microsoft Word
-                              </label>
-                              <input class="form-check-input" type="checkbox" value="" id="filter__check5">
-                            </div>
-                            <div class="form-check">
-                              <label class="form-check-label" for="filter__check51">
-                                TXT
-                              </label>
-                              <input class="form-check-input" type="checkbox" value="" id="filter__check51">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="filter__card">
-                          <h5>Category</h5>
-                          <div class="filter__form">
-                            <div class="form-check">
-                              <label class="form-check-label" for="filter__check6">
-                                All
-                              </label>
-                              <input class="form-check-input" type="checkbox" value="" id="filter__check6">
-                            </div>
-                            <div class="form-check">
-                              <label class="form-check-label" for="filter__check7">
-                                Resume
-                              </label>
-                              <input class="form-check-input" type="checkbox" value="" id="filter__check7">
-                            </div>
-                            <div class="form-check">
-                              <label class="form-check-label" for="filter__check8">
-                                Invoice
-                              </label>
-                              <input class="form-check-input" type="checkbox" value="" id="filter__check8">
-                            </div>
-                            <div class="form-check">
-                              <label class="form-check-label" for="filter__check9">
-                                Ebook
-                              </label>
-                              <input class="form-check-input" type="checkbox" value="" id="filter__check9">
-                            </div>
-                            <div class="form-check">
-                              <label class="form-check-label" for="filter__check10">
-                                Report
-                              </label>
-                              <input class="form-check-input" type="checkbox" value="" id="filter__check10">
-                            </div>
-                            <div class="form-check">
-                              <label class="form-check-label" for="filter__check11">
-                                Legal Form
-                              </label>
-                              <input class="form-check-input" type="checkbox" value="" id="filter__check11">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="filter__card">
-                          <h5>License Type</h5>
-                          <div class="filter__form">
-                            <div class="form-check">
-                              <label class="form-check-label" for="filter__check12">
-                                Personal
-                              </label>
-                              <input class="form-check-input" type="checkbox" value="" id="filter__check12">
-                            </div>
-                            <div class="form-check">
-                              <label class="form-check-label" for="filter__check13">
-                                Commercial
-                              </label>
-                              <input class="form-check-input" type="checkbox" value="" id="filter__check13">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="filter__card">
-                          <h5>Price Range</h5>
-                          <div class="filter__range">
-                            <div class="range-slider" data-group-type="status">
-                              <div class="range-slider-box">
-                                <div class="slider-box">
-                                  <div class="sliderr">
-                                    <div class="progresss">
-                                    </div>
-                                  </div>
-                                  <div class="range-input">
-                                    <input type="range" class="range-min" min="10" max="10000" value="10" step="100">
-                                    <input type="range" class="range-max" min="0" max="10000" value="10000" step="100">
-                                  </div>
-                                </div>
-                                <div class="price-input d-flex justify-content-between align-items-center g-2">
-                                  <h6>$<span class="input-min min_price">10</span>
-                                  </h6>
-                                  <h6>$<span class="input-max min_price">10000</span>
-                                  </h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-12">
-                        <div class="filter__action">
-                          <button type="submit" class="btn btn--base w-100">Apply Now</button>
-                        </div>
-                      </div>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Tone</label>
+                <select id="country" name="country" class=" select2" required>
+                  <option value="">Select Country</option>
+                  <option value="bd">Bangladesh</option>
+                  <option value="us">United State of America</option>
+                  <option value="uk">United Kingdom</option>
+                  <option value="in">India</option>
+                  <option value="aus">Australia</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <a href="#" class="btn btn--base">Generate</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xl-8">
+          <div class="row gy-4">
+            <div class="col-12">
+              <h3>Your Generated Tweets</h3>
+              <span>2 tweets created</span>
+            </div>
+            <div class="col-12">
+              <div class="card ">
+                <div class="tweet-gen">
+                  <div class="tweet-gen__thumb">
+                    <img src="assets/images/tweet/1.jpg" alt="img">
+                  </div>
+                  <div class="tweet-gen__body">
+                    <h4>TweetCraft</h4>
+                    <span class="time">12:27 PM</span>
+                    <p class="tweet-gen__desc">Just launched TweetCraft - the AI-powered tool that transforms your ideas
+                      into viral tweets.
+                      No more staring at blank screens. your voice, amplified.</p>
+                    <div class="tweet-gen__action">
+                      <button><i class="fa-solid fa-heart text--danger"></i> Liked</button>
+                      <button><i class="fa-regular fa-copy"></i> Copy</button>
+                      <button><i class="fa-solid fa-trash-can"></i> Delete</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="dashboard__table">
-              <table class="table table--responsive--md">
-                <thead>
-                  <tr>
-                    <th>Bot ID</th>
-                    <th>Strategy Type</th>
-                    <th>ROI</th>
-                    <th>Total Trades</th>
-                    <th>Win Rate</th>
-                    <th>Status</th>
-                    <th>Profit/Loss</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>#458954</td>
-                    <td>Scalping (AI)</td>
-                    <td>24%</td>
-                    <td>154</td>
-                    <td>73%</td>
-                    <td>Running</td>
-                    <td>+45.12</td>
-                    <td>
-                      <div class="dropdown custom--dropdown">
-                        <button class="action-dropdown-btn" type="button" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                          <li>
-                            <button type="button" class="dropdown-item" data-bs-toggle="modal"
-                              data-bs-target="#exampleModal">
-                              <i class="ti ti-file-description transform-0"></i> View
-                            </button>
-                          </li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-share transform-0"></i> Share</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-chart-bar transform-0"></i>Analytics</a>
-                          </li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-edit transform-0"></i> Edit</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-trash transform-0"></i> Delete</a></li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>#458955</td>
-                    <td>Scalping (AI)</td>
-                    <td>18%</td>
-                    <td>120</td>
-                    <td>68%</td>
-                    <td>Running</td>
-                    <td>+32.45</td>
-                    <td>
-                      <div class="dropdown custom--dropdown">
-                        <button class="action-dropdown-btn" type="button" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                          <li>
-                            <button type="button" class="dropdown-item" data-bs-toggle="modal"
-                              data-bs-target="#exampleModal">
-                              <i class="ti ti-file-description transform-0"></i> View
-                            </button>
-                          </li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-share transform-0"></i> Share</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-chart-bar transform-0"></i>
-                              Analytics</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-edit transform-0"></i> Edit</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-trash transform-0"></i> Delete</a></li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>#458956</td>
-                    <td>Trend Following</td>
-                    <td>27%</td>
-                    <td>98</td>
-                    <td>75%</td>
-                    <td>Running</td>
-                    <td>+50.22</td>
-                    <td>
-                      <div class="dropdown custom--dropdown">
-                        <button class="action-dropdown-btn" type="button" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                          <li>
-                            <button type="button" class="dropdown-item" data-bs-toggle="modal"
-                              data-bs-target="#exampleModal">
-                              <i class="ti ti-file-description transform-0"></i> View
-                            </button>
-                          </li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-share transform-0"></i> Share</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-chart-bar transform-0"></i>
-                              Analytics</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-edit transform-0"></i> Edit</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-trash transform-0"></i> Delete</a></li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>#458957</td>
-                    <td>Swing Trading</td>
-                    <td>12%</td>
-                    <td>86</td>
-                    <td>60%</td>
-                    <td>Running</td>
-                    <td>+28.10</td>
-                    <td>
-                      <div class="dropdown custom--dropdown">
-                        <button class="action-dropdown-btn" type="button" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                          <li>
-                            <button type="button" class="dropdown-item" data-bs-toggle="modal"
-                              data-bs-target="#exampleModal">
-                              <i class="ti ti-file-description transform-0"></i> View
-                            </button>
-                          </li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-share transform-0"></i> Share</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-chart-bar transform-0"></i>
-                              Analytics</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-edit transform-0"></i> Edit</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-trash transform-0"></i> Delete</a></li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>#458958</td>
-                    <td>Breakout Strategy</td>
-                    <td>30%</td>
-                    <td>110</td>
-                    <td>70%</td>
-                    <td>Running</td>
-                    <td>+47.85</td>
-                    <td>
-                      <div class="dropdown custom--dropdown">
-                        <button class="action-dropdown-btn" type="button" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                          <li>
-                            <button type="button" class="dropdown-item" data-bs-toggle="modal"
-                              data-bs-target="#exampleModal">
-                              <i class="ti ti-file-description transform-0"></i> View
-                            </button>
-                          </li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-share transform-0"></i> Share</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-chart-bar transform-0"></i>
-                              Analytics</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-edit transform-0"></i> Edit</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-trash transform-0"></i> Delete</a></li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>#458959</td>
-                    <td>Mean Reversion</td>
-                    <td>22%</td>
-                    <td>95</td>
-                    <td>66%</td>
-                    <td>Running</td>
-                    <td>+36.75</td>
-                    <td>
-                      <div class="dropdown custom--dropdown">
-                        <button class="action-dropdown-btn" type="button" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                          <li>
-                            <button type="button" class="dropdown-item" data-bs-toggle="modal"
-                              data-bs-target="#exampleModal">
-                              <i class="ti ti-file-description transform-0"></i> View
-                            </button>
-                          </li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-share transform-0"></i> Share</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-chart-bar transform-0"></i>
-                              Analytics</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-edit transform-0"></i> Edit</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-trash transform-0"></i> Delete</a></li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>#458960</td>
-                    <td>Momentum Trade</td>
-                    <td>25%</td>
-                    <td>102</td>
-                    <td>72%</td>
-                    <td>Running</td>
-                    <td>+42.30</td>
-                    <td>
-                      <div class="dropdown custom--dropdown">
-                        <button class="action-dropdown-btn" type="button" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                          <li>
-                            <button type="button" class="dropdown-item" data-bs-toggle="modal"
-                              data-bs-target="#exampleModal">
-                              <i class="ti ti-file-description transform-0"></i> View
-                            </button>
-                          </li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-share transform-0"></i> Share</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-chart-bar transform-0"></i>
-                              Analytics</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-edit transform-0"></i> Edit</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-trash transform-0"></i> Delete</a></li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>#458961</td>
-                    <td>Arbitrage</td>
-                    <td>14%</td>
-                    <td>77</td>
-                    <td>64%</td>
-                    <td>Running</td>
-                    <td>+29.50</td>
-                    <td>
-                      <div class="dropdown custom--dropdown">
-                        <button class="action-dropdown-btn" type="button" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                          <li>
-                            <button type="button" class="dropdown-item" data-bs-toggle="modal"
-                              data-bs-target="#exampleModal">
-                              <i class="ti ti-file-description transform-0"></i> View
-                            </button>
-                          </li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-share transform-0"></i> Share</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-chart-bar transform-0"></i>
-                              Analytics</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-edit transform-0"></i> Edit</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-trash transform-0"></i> Delete</a></li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>#458962</td>
-                    <td>Scalping (Manual)</td>
-                    <td>20%</td>
-                    <td>88</td>
-                    <td>70%</td>
-                    <td>Running</td>
-                    <td>+33.10</td>
-                    <td>
-                      <div class="dropdown custom--dropdown">
-                        <button class="action-dropdown-btn" type="button" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                          <li>
-                            <button type="button" class="dropdown-item" data-bs-toggle="modal"
-                              data-bs-target="#exampleModal">
-                              <i class="ti ti-file-description transform-0"></i> View
-                            </button>
-                          </li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-share transform-0"></i> Share</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-chart-bar transform-0"></i>
-                              Analytics</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-edit transform-0"></i> Edit</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-trash transform-0"></i> Delete</a></li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>#458963</td>
-                    <td>Range Trading</td>
-                    <td>16%</td>
-                    <td>80</td>
-                    <td>65%</td>
-                    <td>Running</td>
-                    <td>+30.80</td>
-                    <td>
-                      <div class="dropdown custom--dropdown">
-                        <button class="action-dropdown-btn" type="button" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                          <li>
-                            <button type="button" class="dropdown-item" data-bs-toggle="modal"
-                              data-bs-target="#exampleModal">
-                              <i class="ti ti-file-description transform-0"></i> View
-                            </button>
-                          </li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-share transform-0"></i> Share</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-chart-bar transform-0"></i>
-                              Analytics</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-edit transform-0"></i> Edit</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-trash transform-0"></i> Delete</a></li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>#458964</td>
-                    <td>Algorithmic</td>
-                    <td>28%</td>
-                    <td>115</td>
-                    <td>78%</td>
-                    <td>Running</td>
-                    <td>+55.60</td>
-                    <td>
-                      <div class="dropdown custom--dropdown">
-                        <button class="action-dropdown-btn" type="button" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                          <li>
-                            <button type="button" class="dropdown-item" data-bs-toggle="modal"
-                              data-bs-target="#exampleModal">
-                              <i class="ti ti-file-description transform-0"></i> View
-                            </button>
-                          </li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-share transform-0"></i> Share</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-chart-bar transform-0"></i>
-                              Analytics</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-edit transform-0"></i> Edit</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="ti ti-trash transform-0"></i> Delete</a></li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-
-                </tbody>
-              </table>
-            </div>
           </div>
         </div>
       </div>
+
     </div>
+
   </div>
+</div>
 </div>
 <!--==========================  Dashboard Section End  ==========================-->
 <!-- Modal -->
-<div class="modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
+<div class="modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">

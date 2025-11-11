@@ -6,7 +6,7 @@
   width: 300px;
   height: 100%;
   padding: 20px;
-  background-color: hsl(var(--black));
+  background-color: hsl(var(--white));
   border-right: 1px solid hsl(var(--white) / 0.05);
   z-index: 15;
   transition: .4s;
@@ -117,13 +117,13 @@
   &.fixed-header {
     position: fixed;
     top: 0px;
-    background-color: hsl(var(--black));
+    background-color: hsl(var(--white));
     box-shadow: var(--box-shadow);
     transition: 0.25s linear;
     animation: slide-down 0.6s;
     width: 100%;
     backdrop-filter: blur(10px);
-    box-shadow: 0 1px 20px hsl(var(--white)/ 0.1);
+    box-shadow: 0 1px 20px hsl(var(--black)/ 0.1);
   }
 
   .header__main {
@@ -176,7 +176,7 @@
 
           &:hover,
           &.active {
-            color: hsl(var(--base-d-400));
+            color: hsl(var(--base-d-100));
           }
         }
       }

@@ -5,16 +5,15 @@
   padding-bottom: clamp(1.875rem, 0.781rem + 5.469vw, 6.25rem);
   position: relative;
   z-index: 1;
-  background-color: hsl(var(--white)/ 0.05);
-
-
+  background-color: hsl(var(--base-l-900)/0.5);
+  
   &__pattern {
     position: absolute;
     inset: 0;
     z-index: -1;
     background-image:
-      linear-gradient(to right, hsl(var(--white)/ 0.1) 1px, transparent 1px),
-      linear-gradient(to bottom, hsl(var(--white)/ 0.1) 1px, transparent 1px);
+      linear-gradient(to right, hsl(var(--black)/ 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--black)/ 0.04) 1px, transparent 1px);
     background-size: clamp(2.188rem, 1.641rem + 2.734vw, 4.375rem) clamp(2.188rem, 1.641rem + 2.734vw, 4.375rem);
     mask-image: radial-gradient(ellipse 40% 80% at 50% 0%, hsl(var(--black)) 60%, transparent 100%);
   }

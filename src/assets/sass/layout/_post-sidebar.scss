@@ -39,7 +39,7 @@
 
     &__card {
         &-title {
-            margin-bottom: clamp(0.938rem, 0.672rem + 1.328vw, 2rem);
+            margin-bottom: clamp(0.438rem, 0.313rem + 0.625vw, 0.938rem);
         }
 
         &-item {
@@ -103,7 +103,7 @@
             padding-left: 10px;
             margin-left: 10px;
             display: none;
-            border-left: 1px solid hsl(var(--secondary-l-800));
+            border-left: 1px solid hsl(var(--black)/ 0.5);
         }
 
         &__item {
@@ -157,19 +157,17 @@
 
     .recent-post {
         padding: clamp(0.75rem, 0.393rem + 0.952vw, 1.25rem);
-        border: 1px solid hsl(var(--white) / 0.08);
+        border: 1px solid hsl(var(--border-color));
         border-radius: var(--b-radius-12);
-        background-color: hsl(var(--white)/ 0.04);
-
         &__item {
             display: flex;
-            gap: 20px;
+            gap: 10px;
             color: hsl(var(--body-color));
 
             &:not(:last-child) {
                 margin-bottom: rem(16px);
                 padding-bottom: rem(16px);
-                border-bottom: 1px solid hsl(var(--white)/ 0.04);
+                border-bottom: 1px solid hsl(var(--border-color)/0.6);
             }
 
             @include lg-screen {
@@ -191,12 +189,13 @@
 
         &__thumb {
             flex-shrink: 0;
-            width: rem(70px);
-            height: rem(60px);
+            width: rem(80px);
+            height: rem(70px);
             border-radius: 8px;
             overflow: hidden;
             filter: brightness(0.9);
             transition: .3s;
+            margin-top: 5px;
 
             img {
                 width: 100%;
@@ -223,9 +222,8 @@
 
     .post-category {
         padding: clamp(0.75rem, 0.393rem + 0.952vw, 1.25rem);
-        border: 1px solid hsl(var(--white) / 0.08);
+        border: 1px solid hsl(var(--border-color));
         border-radius: var(--b-radius-12);
-        background-color: hsl(var(--white)/ 0.04);
 
         &__item {
             display: flex;
@@ -235,7 +233,7 @@
             &:not(:last-child) {
                 margin-bottom: rem(16px);
                 padding-bottom: rem(16px);
-                border-bottom: 1px solid hsl(var(--white)/ 0.04);
+                border-bottom: 1px solid hsl(var(--border-color)/0.6);
             }
         }
 

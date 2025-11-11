@@ -12,7 +12,7 @@
         background-color: hsl(var(--white)/0.03);
         padding-inline: clamp(0.938rem, 0.703rem + 1.172vw, 1.875rem);
         padding-block: clamp(1.25rem, 0.938rem + 1.563vw, 2.5rem);
-        border: 1px solid hsl(var(--white)/ 0.08);
+        border: 1px solid hsl(var(--border-color));
         border-radius: var(--b-radius-12);
     }
 
@@ -26,8 +26,8 @@
         z-index: 1;
         display: flex;
         gap: clamp(0.75rem, 0.563rem + 0.938vw, 1.5rem);
-        background-color: hsl(var(--white)/ 0.04);
-        border: 1px solid hsl(var(--white)/ 0.08);
+        background-color: hsl(var(--white));
+        border: 1px solid hsl(var(--border-color));
         backdrop-filter: blur(10px);
         padding: 30px 20px;
         border-radius: var(--b-radius-12);
@@ -46,12 +46,10 @@
     &__icon {
         width: var(--icon-size);
         height: var(--icon-size);
-        background-color: hsl(var(--white)/ 0.08);
+        background-color: hsl(var(--base));
         border: 1px solid hsl(var(--white)/ 0.09);
-        
         box-shadow: var(--box-shadow);
-
-        border-radius: 50%;
+        border-radius: var(--b-radius-8);
         display: grid;
         place-items: center;
         flex-shrink: 0;
