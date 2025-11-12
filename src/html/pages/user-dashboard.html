@@ -3,58 +3,11 @@
 
 <!--==========================  Dashboard Section Start  ==========================-->
 <div class="dashboard">
-  @@include('../partials/_user-sidebar.html')
-  <div class="dashboard__wrap">
-    @@include('../partials/_user-header.html')
-    <div class="dashboard__wrapper">
-      <div class="row justify-content-center gy-3 gy-sm-4">
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <a href="#" class="dashboard-widgets">
-            <div class="dashboard-widgets__content">
-              <p class="dashboard-widgets__title">Total Balance</p>
-              <h3 class="dashboard-widgets__amount">265</h3>
-            </div>
-            <div class="dashboard-widgets__shape">
-              <img src="assets/images/dashboard-shape.png" alt="img">
-            </div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <a href="#" class="dashboard-widgets">
-            <div class="dashboard-widgets__content">
-              <p class="dashboard-widgets__title">Total Balance</p>
-              <h3 class="dashboard-widgets__amount">265</h3>
-            </div>
-            <div class="dashboard-widgets__shape">
-              <img src="assets/images/dashboard-shape.png" alt="img">
-            </div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <a href="#" class="dashboard-widgets">
-            <div class="dashboard-widgets__content">
-              <p class="dashboard-widgets__title">Total Balance</p>
-              <h3 class="dashboard-widgets__amount">265</h3>
-            </div>
-            <div class="dashboard-widgets__shape">
-              <img src="assets/images/dashboard-shape.png" alt="img">
-            </div>
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <a href="#" class="dashboard-widgets">
-            <div class="dashboard-widgets__content">
-              <p class="dashboard-widgets__title">Total Balance</p>
-              <h3 class="dashboard-widgets__amount">265</h3>
-            </div>
-            <div class="dashboard-widgets__shape">
-              <img src="assets/images/dashboard-shape.png" alt="img">
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-xl-4">
+  @@include('../partials/_user-header.html')
+  <div class="container">
+    <div class="dashboard__wrap">
+      <div class="row gy-4">
+        <div class="col-xl-6 col-xxl-5">
           <div class="card">
             <div class="row gy-4">
               <div class="col-12">
@@ -67,9 +20,9 @@
               </div>
               <div class="col-12">
                 <label class="form-label">Content Type</label>
-                <div class="d-flex gap-3">
-                  <a href="#" class="btn btn--base w-50">Tweet</a>
-                  <a href="#" class="btn btn-outline--base w-50">Thread</a>
+                <div class="d-flex flex-wrap  gap-3">
+                  <a href="#" class="btn btn--base flex-grow-1">Tweet</a>
+                  <a href="#" class="btn btn-outline--base flex-grow-1">Thread</a>
                 </div>
               </div>
               <div class="col-12">
@@ -88,28 +41,60 @@
               </div>
             </div>
           </div>
-
         </div>
-        <div class="col-xl-8">
-          <div class="row gy-4">
+        <div class="col-xl-6 col-xxl-7">
+          <div class="row gy-3">
             <div class="col-12">
               <h3>Your Generated Tweets</h3>
               <span>2 tweets created</span>
             </div>
             <div class="col-12">
-              <div class="card ">
+              <div class="card">
                 <div class="tweet-gen">
                   <div class="tweet-gen__thumb">
                     <img src="assets/images/tweet/1.jpg" alt="img">
                   </div>
                   <div class="tweet-gen__body">
-                    <h4>TweetCraft</h4>
-                    <span class="time">12:27 PM</span>
-                    <p class="tweet-gen__desc">Just launched TweetCraft - the AI-powered tool that transforms your ideas
+                    <div class="tweet-gen__top">
+                      <div class="tweet-gen__heading">
+                        <h5 class="tweet-gen__title">TweetCraft</h5>
+                        <span class="tweet-gen__time">12:27 PM</span>
+                      </div>
+                      <span class="badge badge--base rounded-pill">Tweet</span>
+                    </div>
+                    <p class="tweet-gen__desc">Just launched TweetCraft - the AI-powered tool that transforms your
+                      ideas
                       into viral tweets.
-                      No more staring at blank screens. your voice, amplified.</p>
+                      No more staring at blank screens. your voice, amplified. <span>&#x1F680;</span></p>
                     <div class="tweet-gen__action">
                       <button><i class="fa-solid fa-heart text--danger"></i> Liked</button>
+                      <button><i class="fa-regular fa-copy"></i> Copy</button>
+                      <button><i class="fa-solid fa-trash-can"></i> Delete</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card">
+                <div class="tweet-gen">
+                  <div class="tweet-gen__thumb">
+                    <img src="assets/images/tweet/1.jpg" alt="img">
+                  </div>
+                  <div class="tweet-gen__body">
+                    <div class="tweet-gen__top">
+                      <div class="tweet-gen__heading">
+                        <h5 class="tweet-gen__title">TweetCraft</h5>
+                        <span class="tweet-gen__time">12:27 PM</span>
+                      </div>
+                      <span class="badge badge--base rounded-pill">Tweet</span>
+                    </div>
+                    <p class="tweet-gen__desc">Just launched TweetCraft - the AI-powered tool that transforms your
+                      ideas
+                      into viral tweets.
+                      No more staring at blank screens. your voice, amplified. <span>&#x1F680;</span></p>
+                    <div class="tweet-gen__action">
+                      <button><i class="fa-regular fa-heart text--danger"></i> Liked</button>
                       <button><i class="fa-regular fa-copy"></i> Copy</button>
                       <button><i class="fa-solid fa-trash-can"></i> Delete</button>
                     </div>
@@ -120,61 +105,8 @@
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
-</div>
 </div>
 <!--==========================  Dashboard Section End  ==========================-->
-<!-- Modal -->
-<div class="modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Job Application</h5>
-        <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close"><i
-            class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div class="modal-body">
-        <div class="card">
-          <ul class="job-application__list">
-            <li>
-              <p>Form Name</p>
-              <span>1,250</span>
-            </li>
-            <li>
-              <p>Views</p>
-              <span>Job application</span>
-            </li>
-            <li>
-              <p>Submissions</p>
-              <span>850</span>
-            </li>
-            <li>
-              <p>Conversion Rate</p>
-              <span>68%</span>
-            </li>
-            <li>
-              <p>Abandonment Rate</p>
-              <span>850</span>
-            </li>
-            <li>
-              <p>Avg. Completion Time</p>
-              <span>12%</span>
-            </li>
-            <li>
-              <p>Device Report</p>
-              <span>12Mobile: 65% / Desktop:35% </span>
-            </li>
-            <li>
-              <p>Traffic Source</p>
-              <span>Social: 35%, Email: 25%</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 @@include('../partials/_template-bottom.html')

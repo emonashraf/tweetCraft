@@ -2,7 +2,9 @@
 .cta {
     position: relative;
     z-index: 1;
-    background-image: linear-gradient(hsl(var(--base)/ 0.1) 10%, transparent) ;
+    background-color: hsl(var(--base-l-900)/0.8) ;
+    border: 1px solid hsl(var(--border-color));
+    padding-inline: clamp(1.25rem, 0.781rem + 2.344vw, 3.125rem);
     border-radius: var(--b-radius-12);
 
     &__inner {

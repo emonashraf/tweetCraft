@@ -65,16 +65,16 @@ label.required:after {
 
   &:disabled,
   &[readonly] {
-    background-color: hsl(var(--white) / 0.08);
+    background-color: hsl(var(--black) / 0.05);
     opacity: 1;
     border: 0;
   }
 
   &[type='password'] {
-    color: hsl(var(--white) / 0.5);
+    color: hsl(var(--black) / 0.5);
 
     &:focus {
-      color: hsl(var(--white));
+      color: hsl(var(--black));
     }
   }
 
@@ -366,7 +366,6 @@ input[type='number'] {
     border-bottom-left-radius: 0;
   }
 
-
   .form-control {
     border-width: 0px !important;
     padding-right: 0;
@@ -378,14 +377,10 @@ input[type='number'] {
       border: none !important;
     }
   }
-
   .input-group-text+.form-control {
     padding-right: 20px;
     padding-left: 10px !important;
   }
-  
- 
-
   .btn {
     padding-inline: 14px;
     border-radius: calc(var(--common-radius) - 2px);
@@ -414,19 +409,19 @@ input[type='number'] {
   }
 
   .form-control[readonly] {
-    background: hsl(var(--white) / 0.3) !important;
+    background: hsl(var(--black) / 0.3) !important;
   }
 
   .form-control[readonly]:focus {
-    border-color: hsl(var(--white) / 0.3);
+    border-color: hsl(var(--black) / 0.3);
   }
 
   &:has(.form-control[readonly]) {
-    background: hsl(var(--white) / 0.3) !important;
+    background: hsl(var(--black) / 0.3) !important;
   }
 
   &:has(.form-control[readonly]):focus-within {
-    border-color: hsl(var(--white) / 0.4) !important;
+    border-color: hsl(var(--black) / 0.4) !important;
   }
 }
 

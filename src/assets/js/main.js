@@ -236,17 +236,17 @@
     delay: 100,
     reset: false,
   })
-  sr.reveal('.bottom-reveal, .banner__info-item:nth-child(2), .section-heading__title, .pricing', {
+  sr.reveal('.bottom-reveal, .section-heading__title', {
     delay: 60,
     interval: 100,
     origin: 'bottom',
   })
-  sr.reveal('.section-heading__desc, .features__card, .testimonial__card, .pricing__card, .blog__card', {
+  sr.reveal('.section-heading__desc, .features__card, .testimonial__card, .blog__card', {
     delay: 100,
     interval: 200,
     origin: 'bottom',
   })
-  sr.reveal('.right-reveal, .banner__desc, .banner__info-item:nth-child(3)', {
+  sr.reveal('.right-reveal, .banner__desc, .banner__info-item:nth-child(2)', {
     delay: 60,
     origin: 'right',
      interval: 200,

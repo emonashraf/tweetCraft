@@ -5,7 +5,7 @@
   }
 }
 .logo{
-  max-width: 180px;
+  max-width: clamp(6.25rem, 5.469rem + 3.906vw, 9.375rem);
 }
 
 .section-bg {

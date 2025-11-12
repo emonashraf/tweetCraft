@@ -75,9 +75,9 @@
       flex-direction: column;
       gap: 10px;
       li {
-        background-color: hsl(var(--white)/ 0.04);
+        background-color: hsl(var(--black)/ 0.04);
         padding: 10px 16px;
-        border-radius: var(--b-radius-6);
+        border-radius: var(--b-radius-8);
      
 
         a {
@@ -101,9 +101,6 @@
 
 
 /* ======================  Header Section Start  ======================*/
-  .main__logo {
-    max-width: 150px;
-  }
 
 .header__area {
   padding-block: clamp(0.938rem, 0.734rem + 1.016vw, 1.75rem);

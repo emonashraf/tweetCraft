@@ -34,7 +34,7 @@ table {
   height: auto;
   border: 1px solid var(--common-b-color);
   border-radius: var(--common-radius) !important;
-  background-color: hsl(var(--white)/ 0.04);
+  background-color: hsl(var(--white));
   backdrop-filter: blur(10px);
   padding: var(--common-p) !important;
   font-size: var(--common-f-size) !important;
@@ -122,7 +122,7 @@ table {
 
 .select2-container--open .select2-dropdown {
   backdrop-filter: blur(15px);
-  background: linear-gradient(hsl(var(--white)/ 0.01), hsl(var(--base-l-900)));
+  background: linear-gradient(hsl(var(--white)), hsl(var(--base-l-900)));
   background-color: hsl(var(--white) / 0.04);
   border: 1px solid hsl(var(--border-color)/ 0.04);
   overflow: hidden;

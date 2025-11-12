@@ -33,7 +33,7 @@
     }
 
     .page-link {
-      border: 1px solid hsl(var(--white) / 0.1);
+      border: 1px solid hsl(var(--black) / 0.1);
       border-radius: 4px;
       height: 40px;
       width: 40px;
@@ -46,7 +46,7 @@
       color: hsl(var(--heading-color));
 
       &:hover {
-        background: linear-gradient(180deg, hsl(var(--base)), transparent) !important;
+        background-color: hsl(var(--base)) !important;
         color: hsl(var(--white));
       }
 
