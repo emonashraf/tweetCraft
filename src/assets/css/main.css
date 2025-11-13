@@ -4112,7 +4112,7 @@ input[type=number] {
     height: 100%;
     padding: 20px;
     background-color: hsl(var(--white));
-    border-right: 1px solid hsl(var(--white)/0.05);
+    border-right: 1px solid hsl(var(--black)/0.05);
     z-index: 15;
     transition: 0.4s;
     visibility: hidden;
@@ -4183,7 +4183,7 @@ input[type=number] {
 }
 
 .offcanvas__area .offcanvas__main .offcanvas__menu ul li {
-    background-color: hsl(var(--black)/0.04);
+    background-color: hsl(var(--base)/0.05);
     padding: 10px 16px;
     border-radius: var(--b-radius-8);
 }
@@ -4197,7 +4197,7 @@ input[type=number] {
 }
 
 .offcanvas__area .offcanvas__main .offcanvas__menu ul li a:hover, .offcanvas__area .offcanvas__main .offcanvas__menu ul li a.active {
-    color: hsl(var(--base-l-300));
+    color: hsl(var(--base));
 }
 
 /* ======================  Offcanvas Section End  ======================*/
@@ -4346,7 +4346,7 @@ input[type=number] {
 /* ============= Footer Start Here ======================= */
 .footer {
     position: relative;
-    background-color: hsl(var(--black));
+    background-color: hsl(var(--black)/0.9);
     color: hsl(var(--white));
     margin-top: auto;
     z-index: 2;
@@ -4379,7 +4379,7 @@ input[type=number] {
 }
 
 .footer__first-item {
-    max-width: 28.125rem;
+    max-width: 22.5rem;
 }
 
 @media screen and (max-width: 1199px) {
@@ -4390,6 +4390,7 @@ input[type=number] {
         align-items: center;
         text-align: center;
         margin-inline: auto;
+        max-width: 28.125rem;
     }
 }
 
@@ -4502,10 +4503,19 @@ input[type=number] {
     position: relative;
 }
 
+.footer__form .input-group {
+    border-color: hsl(var(--white)/0.2);
+}
+
 .footer__form .form-control {
     border: 1px solid hsl(var(--white)/0.15);
-    color: hsl(var(--base));
+    color: hsl(var(--white)) !important;
+    padding-right: 10px;
     color: hsl(var(--white));
+}
+
+.footer__form .form-control::placeholder {
+    color: hsl(var(--white)/0.6) !important;
 }
 
 .footer__form .form-control ~ button {
@@ -5540,7 +5550,7 @@ table .select2-container.select2-container--open {
     padding-bottom: clamp(1.875rem, 0.781rem + 5.469vw, 6.25rem);
     position: relative;
     z-index: 1;
-    background-color: hsl(var(--base-l-900)/0.5);
+    background-color: hsl(var(--base-l-900)/0.3);
 }
 
 .breadcrumb__pattern {
@@ -5767,7 +5777,7 @@ table .select2-container.select2-container--open {
 }
 
 .banner__title span {
-    background: linear-gradient(90deg, hsl(var(--base)), hsl(var(--base-l-500)));
+    background: linear-gradient(90deg, hsl(var(--base-l-200)), hsl(var(--base-d-200)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -5775,7 +5785,7 @@ table .select2-container.select2-container--open {
 .banner__desc {
     max-width: 760px;
     margin-inline: auto;
-    font-size: clamp(1rem, 0.969rem + 0.156vw, 1.125rem);
+    font-size: clamp(0.938rem, 0.891rem + 0.234vw, 1.125rem);
 }
 
 .banner__btns {
@@ -5882,115 +5892,66 @@ table .select2-container.select2-container--open {
 }
 
 /* ======================  Trust End  ======================*/
-/* ======================  Brand Start  ======================*/
-.brand-logo {
-    position: relative;
-    z-index: 2;
-    padding-block: 30px;
-}
-
-.brand-logo__header {
-    margin-inline: auto;
-    text-align: center;
-    max-width: 600px;
-    margin-bottom: clamp(1.25rem, 1.094rem + 0.781vw, 1.875rem);
-}
-
-.brand-logo__item {
-    width: clamp(10.625rem, 9.375rem + 6.25vw, 15.625rem) !important;
-    padding-inline: clamp(0.938rem, 0.703rem + 1.172vw, 1.875rem);
-    padding-block: 0;
-    transition: 0.3s;
-    position: relative;
-    z-index: 2;
-}
-
-.brand-logo__item img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-/* ======================  Brand End  ======================*/
-/* ======================  Work-process Start  ======================*/
-.work-process {
-    position: relative;
-    --count-size: clamp(2.5rem, 2.344rem + 0.781vw, 3.125rem);
-}
-
-.work-process__card {
-    text-align: center;
-    position: relative;
-    height: 100%;
-    margin-inline: auto;
-    max-width: 420px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.work-process__card:hover .work-process__count {
-    transition: 0.3s;
-    box-shadow: var(--box-shadow);
-}
-
-.work-process__count {
-    width: var(--count-size);
-    height: var(--count-size);
-    background-color: hsl(var(--white)/0.08);
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    margin-bottom: clamp(0.938rem, 0.859rem + 0.391vw, 1.25rem);
-    border: 1px solid hsl(var(--white)/0.09);
-    transition: 0.3s;
-}
-
-.work-process__title {
-    margin-bottom: clamp(0.5rem, 0.391rem + 0.547vw, 0.938rem);
-}
-
-/* ======================  Work-process End  ======================*/
 /* ======================  Trust Start  ======================*/
-.features {
+.creators {
     position: relative;
     z-index: 1;
     height: 100%;
-    --icon-size: clamp(2.5rem, 2.344rem + 0.781vw, 3.125rem);
+    --icon-width: clamp(4.375rem, 3.906rem + 2.344vw, 6.25rem);
+    --icon-height: clamp(3.125rem, 2.656rem + 2.344vw, 5rem);
 }
 
-.features__card {
-    background-color: hsl(var(--white)/0.06);
-    border: 1px solid hsl(var(--white)/0.08);
+.creators__card {
+    position: relative;
+    background-color: hsl(var(--white));
+    border: 1px solid hsl(var(--base-l-900));
     padding: 30px 20px;
+    padding-top: calc(var(--icon-height) + clamp(1.25rem, 1.172rem + 0.391vw, 1.563rem));
     border-radius: var(--b-radius-12);
-    transition: 0.3s;
+    transition: 0.3s ease;
+    transform: scale(1);
+    height: 100%;
+    text-align: center;
+    z-index: 1;
 }
 
-.features__card:hover {
-    border: 1px solid hsl(var(--white)/0.09);
+.creators__card:hover {
+    border-color: hsl(var(--base-l-500));
     box-shadow: var(--box-shadow);
 }
 
-.features__icon {
-    width: var(--icon-size);
-    height: var(--icon-size);
-    background-color: hsl(var(--white)/0.08);
-    border-radius: 50%;
+.creators__card:hover .creators__icon {
+    border-color: hsl(var(--base));
+    background-color: hsl(var(--base));
+    border-top: 0;
+    color: hsl(var(--white));
+}
+
+.creators__icon {
+    width: var(--icon-width);
+    height: var(--icon-height);
+    background-color: hsl(var(--base-l-900));
+    border: 1px solid hsl(var(--base-l-900));
+    border-top: 0;
+    color: hsl(var(--base));
+    border-radius: 0 0 50% 50%;
     display: grid;
     place-items: center;
+    margin-inline: auto;
     margin-bottom: clamp(0.625rem, 0.469rem + 0.781vw, 1.25rem);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
 }
 
-.features__icon i {
-    font-size: 16px;
+.creators__icon i {
+    font-size: 20px;
 }
 
-.features__title {
-    margin-bottom: clamp(0.625rem, 0.406rem + 1.094vw, 1.5rem);
+.creators__title {
+    margin-bottom: clamp(0.5rem, 0.344rem + 0.781vw, 1.125rem);
 }
 
 /* ======================  Trust End  ======================*/
@@ -7571,69 +7532,4 @@ table .select2-container.select2-container--open {
 }
 
 /* ======================  User-create-form End  ======================*/
-/* ======================  About Start  ======================*/
-.about {
-    position: relative;
-    z-index: 1;
-    overflow-x: hidden;
-    --list-icon: clamp(1.125rem, 1.031rem + 0.469vw, 1.5rem);
-}
-
-.about__list {
-    display: flex;
-    flex-direction: column;
-    gap: clamp(0.938rem, 0.547rem + 1.953vw, 2.5rem);
-}
-
-.about__list-item {
-    display: flex;
-    gap: 18px;
-}
-
-.about__list-item::before {
-    content: "\f00c";
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    display: inline-block;
-    color: hsl(var(--base));
-    border: 1px solid hsl(var(--base));
-    border-radius: 50%;
-    width: var(--list-icon);
-    height: var(--list-icon);
-    display: grid;
-    place-items: center;
-    flex-shrink: 0;
-    margin-top: 5px;
-    font-size: clamp(0.75rem, 0.688rem + 0.313vw, 1rem);
-}
-
-.about__banner {
-    position: relative;
-    background-color: hsl(var(--base-l-900)/0.6);
-    border-radius: 12px;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.about__shape {
-    max-width: clamp(12.5rem, 10.938rem + 7.813vw, 18.75rem);
-    position: absolute;
-    top: 30px;
-    right: 20px;
-    z-index: -1;
-}
-
-.about__thumb {
-    text-align: end;
-    padding-top: 60px;
-    padding-left: 60px;
-    max-width: 64.375rem;
-}
-
-.about__thumb img {
-    width: 100%;
-    height: 100%;
-}
-
-/* ======================  About End  ======================*/
 /*# sourceMappingURL=main.css.map */

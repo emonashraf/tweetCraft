@@ -241,7 +241,7 @@
     interval: 100,
     origin: 'bottom',
   })
-  sr.reveal('.section-heading__desc, .features__card, .testimonial__card, .blog__card', {
+  sr.reveal('.section-heading__desc, .choose-us__card, .testimonial__card, .blog__card', {
     delay: 100,
     interval: 200,
     origin: 'bottom',

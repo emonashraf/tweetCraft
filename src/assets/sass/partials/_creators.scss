@@ -1,0 +1,72 @@
+/* ======================  Trust Start  ======================*/
+.creators {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    --icon-width: clamp(4.375rem, 3.906rem + 2.344vw, 6.25rem);
+    --icon-height: clamp(3.125rem, 2.656rem + 2.344vw, 5rem);
+
+
+    &__card {
+        position: relative;
+        background-color: hsl(var(--white));
+        border: 1px solid hsl(var(--base-l-900));
+        padding: 30px 20px;
+        padding-top: calc(var(--icon-height) + clamp(1.25rem, 1.172rem + 0.391vw, 1.563rem));
+        border-radius: var(--b-radius-12);
+        transition: 0.3s ease;
+        transform: scale(1);
+        height: 100%;
+        text-align: center;
+        z-index: 1;
+
+        &:hover {
+            border-color:  hsl(var(--base-l-500));
+            box-shadow: var(--box-shadow);
+
+            .creators__icon {
+                border-color: hsl(var(--base));
+                background-color: hsl(var(--base));
+                border-top: 0;
+                color: hsl(var(--white));
+            }
+
+        }
+    }
+
+    &__icon {
+        width: var(--icon-width);
+        height: var(--icon-height);
+        background-color: hsl(var(--base-l-900));
+        border: 1px solid  hsl(var(--base-l-900));
+        border-top: 0;
+        color: hsl(var(--base));
+        border-radius: 0 0 50% 50%;
+        display: grid;
+        place-items: center;
+        margin-inline: auto;
+        margin-bottom: clamp(0.625rem, 0.469rem + 0.781vw, 1.25rem);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.3s;
+        
+
+        i {
+            font-size: 20px;
+        }
+    }
+
+    &__title {
+        margin-bottom: clamp(0.5rem, 0.344rem + 0.781vw, 1.125rem);
+    }
+}
+
+
+
+
+
+
+
+/* ======================  Trust End  ======================*/

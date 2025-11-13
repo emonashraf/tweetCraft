@@ -7,7 +7,7 @@
   height: 100%;
   padding: 20px;
   background-color: hsl(var(--white));
-  border-right: 1px solid hsl(var(--white) / 0.05);
+  border-right: 1px solid hsl(var(--black) / 0.05);
   z-index: 15;
   transition: .4s;
   visibility: hidden;
@@ -75,7 +75,7 @@
       flex-direction: column;
       gap: 10px;
       li {
-        background-color: hsl(var(--black)/ 0.04);
+        background-color: hsl(var(--base)/ 0.05);
         padding: 10px 16px;
         border-radius: var(--b-radius-8);
      
@@ -89,7 +89,7 @@
 
           &:hover,
           &.active {
-            color: hsl(var(--base-l-300));
+            color: hsl(var(--base));
           }
         }
       }

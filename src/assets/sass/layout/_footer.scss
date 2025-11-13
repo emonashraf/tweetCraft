@@ -1,7 +1,7 @@
 /* ============= Footer Start Here ======================= */
 .footer {
   position: relative;
-  background-color: hsl(var(--black));
+  background-color: hsl(var(--black)/ 0.9);
   color: hsl(var(--white));
   margin-top: auto;
   z-index: 2;
@@ -34,7 +34,7 @@
 
 
   &__first-item {
-    max-width: rem(450px);
+    max-width: rem(360px);
 
     @include lg-screen {
       display: flex;
@@ -43,6 +43,7 @@
       align-items: center;
       text-align: center;
       margin-inline: auto;
+      max-width: rem(450px);
     }
   }
 
@@ -155,10 +156,18 @@
 
   &__form {
     position: relative;
+    .input-group{
+      border-color: hsl(var(--white)/ 0.2);
+    }
 
     .form-control {
       border: 1px solid hsl(var(--white)/ 0.15);
-      color: hsl(var(--base));
+      color: hsl(var(--white)) !important;
+      padding-right: 10px;
+      &::placeholder{
+        color: hsl(var(--white)/0.6) !important;
+      }
+  
 
       ~button {
         width: 45px;

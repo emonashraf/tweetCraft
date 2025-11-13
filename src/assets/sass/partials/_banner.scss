@@ -47,7 +47,7 @@
     margin-bottom: clamp(0.938rem, 0.703rem + 1.172vw, 1.875rem);
 
     span {
-      background: linear-gradient(90deg, hsl(var(--base)), hsl(var(--base-l-500)));
+      background: linear-gradient(90deg, hsl(var(--base-l-200)), hsl(var(--base-d-200)));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -56,7 +56,7 @@
   &__desc {
     max-width: 760px;
     margin-inline: auto;
-    font-size: clamp(1rem, 0.969rem + 0.156vw, 1.125rem);
+    font-size: clamp(0.938rem, 0.891rem + 0.234vw, 1.125rem);
   }
 
   &__btns {
